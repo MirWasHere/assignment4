@@ -11,13 +11,10 @@ public class DialougeManager : MonoBehaviour
 
     public TMP_Text nameText;
     public TMP_Text dialougeText;
-    GameObject continueButton;
-    GameObject dialougeBox;
 
+    [SerializeField]public Animator friendAnimator;
+    public Animator dialougeAnim;
 
-    [SerializeField]GameObject contButt;
-
-    [SerializeField]public Animator animator;
 
     
     private Queue<string> sentences;
@@ -25,7 +22,6 @@ public class DialougeManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
-        continueButton = GameObject.FindGameObjectWithTag("Continue");
 
         Speak(false);
     }
@@ -33,7 +29,7 @@ public class DialougeManager : MonoBehaviour
     
     public void StartDialouge(Dialouge dialouge)
     {
-        Debug.Log("Starting conversation with " + dialouge.name);
+        dialougeAnim.SetBool("IsOpen", true);
         
         Speak(true);
 
@@ -65,14 +61,13 @@ public class DialougeManager : MonoBehaviour
     void EndDialouge()
     {
         Debug.Log("Ending dialouge.");
-
-        contButt.transform.localScale = new Vector3(-10, 0, 0);
+        dialougeAnim.SetBool("IsOpen", false);
         Speak(false);
     }
 
 
     public void Speak(bool speaking){
-        animator.SetBool("TalkingWith", speaking);
+        friendAnimator.SetBool("TalkingWith", speaking);
     }
 
 }

@@ -11,21 +11,14 @@ public class DialougeTrigger : MonoBehaviour
 
     private bool playerInRange;
     private Animator animator;
-    GameObject continueButton;
 
     
     
 
     private void Awake()
     {
-
-
-        dialougeBox = GameObject.FindGameObjectWithTag("DialougeBox");
-        continueButton = GameObject.FindGameObjectWithTag("Continue");
-
         playerInRange = false;
         visualCue.SetActive(false);
-        continueButton.SetActive(false);
     }
 
     private void Update()
@@ -63,7 +56,6 @@ public class DialougeTrigger : MonoBehaviour
 
     public void TriggerDialouge()
     {
-        continueButton.gameObject.SetActive(true);
         FindObjectOfType<DialougeManager>().StartDialouge(dialouge);
         
     }
