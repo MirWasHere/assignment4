@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
                     won = true;
                 }
                 if(count >= 14){
-                    Debug.log("um");
+                    Debug.Log("um");
                     winTwice = true;
                 }
                 if(count >= 19)
