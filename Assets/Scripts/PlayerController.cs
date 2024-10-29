@@ -10,11 +10,15 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 2f;
     [SerializeField] private float turnSpeed = 45f;
-       private Rigidbody rb;
+    private Rigidbody rb;
+    private int count;
+    private bool allCollect;
 
     void Start()
     {
         rb = GetComponent <Rigidbody>();
+        count = 0;
+        allCollect = false;
     }
 
     void Update()
@@ -40,6 +44,14 @@ public class PlayerController : MonoBehaviour
                 SceneManager.LoadScene("Scene3");
 
                  transform.position = new Vector3(8.95f, 11.0f, -10f);
+          }
+          else if (other.gameObject.CompareTag("Collectible")) 
+           {
+                other.gameObject.SetActive(false);
+                count = count + 1;
+                if(allCollect){
+                    Debug.Log("YAY!");
+                }
           }
       }
 

@@ -9,11 +9,9 @@ public class DialougeTrigger : MonoBehaviour
     [SerializeField] private GameObject visualCue;
     public Dialouge dialouge;
 
-    private bool playerInRange;
-    private Animator animator;
 
-    
-    
+    private bool playerInRange;
+    private Animator animator;    
 
     private void Awake()
     {
@@ -59,4 +57,5 @@ public class DialougeTrigger : MonoBehaviour
         FindObjectOfType<DialougeManager>().StartDialouge(dialouge);
         
     }
+
 }

@@ -15,7 +15,7 @@ public class DialougeManager : MonoBehaviour
     [SerializeField]public Animator friendAnimator;
     public Animator dialougeAnim;
 
-
+    DialougeTrigger dialougeTrig;
     
     private Queue<string> sentences;
     // Start is called before the first frame update
@@ -36,6 +36,7 @@ public class DialougeManager : MonoBehaviour
         nameText.text = dialouge.name;
 
         sentences.Clear();
+        
 
         foreach(string sentence in dialouge.sentences)
         {

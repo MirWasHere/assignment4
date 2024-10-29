@@ -864,7 +864,8 @@ MonoBehaviour:
     name: Charles
     sentences:
     - Hey, Airin! Thanks for coming over!
-    - I need you to head out side and pick my strawberries for me.
+    - I called you because I need you to head out side and pick my strawberries for
+      me.
     - I could do it myself, but there wouldn't be a game if you didn't do it for
       me, haha!
     - Just head out that door to your right to head out back. Whenever your ready...
@@ -1194,6 +1195,7 @@ GameObject:
   - component: {fileID: 419260444}
   - component: {fileID: 419260449}
   - component: {fileID: 419260448}
+  - component: {fileID: 419260450}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1322,6 +1324,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419260443}
   m_CullTransparentMesh: 1
+--- !u!114 &419260450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419260443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d559ea2cf16ab5540985cf410bc4535f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &438209882
 GameObject:
   m_ObjectHideFlags: 0
@@ -3562,6 +3576,7 @@ GameObject:
   - component: {fileID: 1199384353}
   - component: {fileID: 1199384352}
   - component: {fileID: 1199384354}
+  - component: {fileID: 1199384355}
   m_Layer: 0
   m_Name: DialougeManager
   m_TagString: Untagged
@@ -3621,6 +3636,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1199384355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199384351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d559ea2cf16ab5540985cf410bc4535f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1200850831
 GameObject:
   m_ObjectHideFlags: 0
@@ -3760,7 +3787,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0.215, y: 1}
-  m_AnchoredPosition: {x: 8.5, y: 22.956451}
+  m_AnchoredPosition: {x: 8.500122, y: 22.956451}
   m_SizeDelta: {x: 13, y: 48.07289}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1242863036
@@ -5642,6 +5669,7 @@ GameObject:
   - component: {fileID: 1712830810}
   - component: {fileID: 1712830809}
   - component: {fileID: 1712830811}
+  - component: {fileID: 1712830812}
   m_Layer: 5
   m_Name: DialougeBox
   m_TagString: Untagged
@@ -5730,6 +5758,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1712830812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712830807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d559ea2cf16ab5540985cf410bc4535f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1736000900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6360420542703049432, guid: 8fcb9d2d43929c04f8c70c38581418d4,
