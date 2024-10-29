@@ -1195,7 +1195,6 @@ GameObject:
   - component: {fileID: 419260444}
   - component: {fileID: 419260449}
   - component: {fileID: 419260448}
-  - component: {fileID: 419260450}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1324,18 +1323,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419260443}
   m_CullTransparentMesh: 1
---- !u!114 &419260450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419260443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d559ea2cf16ab5540985cf410bc4535f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &438209882
 GameObject:
   m_ObjectHideFlags: 0
@@ -5669,7 +5656,6 @@ GameObject:
   - component: {fileID: 1712830810}
   - component: {fileID: 1712830809}
   - component: {fileID: 1712830811}
-  - component: {fileID: 1712830812}
   m_Layer: 5
   m_Name: DialougeBox
   m_TagString: Untagged
@@ -5758,18 +5744,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1712830812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712830807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d559ea2cf16ab5540985cf410bc4535f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1736000900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6360420542703049432, guid: 8fcb9d2d43929c04f8c70c38581418d4,
