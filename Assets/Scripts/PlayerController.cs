@@ -14,11 +14,17 @@ public class PlayerController : MonoBehaviour
 
     public TextMeshProUGUI countText;
     private int count;
+    private bool won;
+    private bool winTwice;
+    private bool wonThrice;
 
     void Start()
     {
         rb = GetComponent <Rigidbody>();
         count = 0;
+        won = false;
+        winTwice = false;
+        wonThrice = false;
     }
 
     void Update()
@@ -50,15 +56,47 @@ public class PlayerController : MonoBehaviour
                 other.gameObject.SetActive(false);
                 count = count + 1;
                 SetCountText();
-                if(count >= 10){
+                if(count >= 9){
                     Debug.Log("YAY!");
+                    won = true;
+                }
+                if(count >= 14){
+                    Debug.log("um");
+                    winTwice = true;
+                }
+                if(count >= 19)
+                {
+                    Debug.Log("...");
+                    wonThrice = true;
                 }
           }
       }
 
       void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
+        if(wonThrice)
+        {
+            countText.text = "You know you don't get anything extra for getting all of them, right..?\n";
+            countText.text += "Count: " + count.ToString();
+        }
+        
+        else if(winTwice)
+        {
+            countText.text = "You Can Stop Now...\n";
+            countText.text += "Count: " + count.ToString();
+
+        }
+        
+        else if(won)
+        {
+            countText.text = "You Win!!\n";
+            countText.text += "Count: " + count.ToString();
+        }
+        else
+        {
+            countText.text = "Count: " + count.ToString();
+        }
+
 
     }
 }
