@@ -17,7 +17,7 @@ public class RobinSing : MonoBehaviour
 
     private void Update()
     {
-        birbAnim.SetBool("PlayerInRange", yeah);
+       birbAnim.SetBool("PlayerInRange", yeah);
     }
 
     // Update is called once per frame
