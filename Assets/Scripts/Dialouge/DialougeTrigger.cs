@@ -46,7 +46,7 @@ public class DialougeTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider collider)
     {
-                if(collider.gameObject.tag == "Player")
+        if(collider.gameObject.tag == "Player")
         {
             playerInRange = false;
         }
