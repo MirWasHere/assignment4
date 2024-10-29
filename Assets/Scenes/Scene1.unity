@@ -2063,6 +2063,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &333402944 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: f2f7b64dd5c50f8479d6d1610f8537c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1580663440}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &333402946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2075,7 +2081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37a22d4f347d01d42b30134f38152b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  birbAnim: {fileID: 0}
+  birbAnim: {fileID: 333402944}
 --- !u!65 &333402947
 BoxCollider:
   m_ObjectHideFlags: 0
