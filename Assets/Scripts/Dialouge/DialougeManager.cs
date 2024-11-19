@@ -11,6 +11,7 @@ public class DialougeManager : MonoBehaviour
 
     public TMP_Text nameText;
     public TMP_Text dialougeText;
+    
 
 
     [SerializeField]public Animator friendAnimator;
