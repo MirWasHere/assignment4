@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: NextScene
   m_EditorClassIdentifier: 
   sentences:
-  - text: Hello world...
-    speaker: {fileID: 11400000, guid: 6550c4e49b262ee4cb6bacfd928369ca, type: 2}
-  - text: Built to think and not to feel
-    speaker: {fileID: 11400000, guid: 6550c4e49b262ee4cb6bacfd928369ca, type: 2}
-  nextScene: {fileID: 0}
+  - text: Hello, world...
+    speaker: {fileID: 11400000, guid: 859a21c3c9d9d474484aab949016b856, type: 2}
+  - text: Programmed to work and not to feel
+    speaker: {fileID: 11400000, guid: 859a21c3c9d9d474484aab949016b856, type: 2}
+  - text: Not even sure that this is real
+    speaker: {fileID: 11400000, guid: 859a21c3c9d9d474484aab949016b856, type: 2}
+  - text: Hello, world
+    speaker: {fileID: 11400000, guid: 859a21c3c9d9d474484aab949016b856, type: 2}
+  nextScene: {fileID: 11400000, guid: 70848e35996af86478a7e2cc107f7d30, type: 2}
