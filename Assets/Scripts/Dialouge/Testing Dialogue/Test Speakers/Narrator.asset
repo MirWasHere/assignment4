@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abebeed8122d7e54c8d5c7ba136b8ea0, type: 3}
-  m_Name: Jerry
+  m_Name: Narrator
   m_EditorClassIdentifier: 
-  speakerName: Jerry
-  textColor: {r: 1, g: 0.14285713, b: 0, a: 1}
+  speakerName: 
+  textColor: {r: 0, g: 0, b: 0, a: 0}

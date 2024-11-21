@@ -6,6 +6,7 @@ using UnityEngine;
 public class StoryScene : ScriptableObject
 {
     public List<Sentence> sentences;
+    public StoryScene nextScene;
    
 
     [System.Serializable]

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 
@@ -9,10 +10,7 @@ public class BottomBarControllers : MonoBehaviour
     public TextMeshProUGUI personNameText;
 
     private int sentenceIndex = -1;
-    public StoryScene currentScene;
-    private string NPCname;
-
-
+    private StoryScene currentScene;
     private State state = State.COMPLETED;
 
     private enum State
@@ -20,14 +18,42 @@ public class BottomBarControllers : MonoBehaviour
         PLAYING, COMPLETED
     }
 
-    // Start is called before the first frame update
-    void Start()
+
+    public void PlayScene(StoryScene scene)
     {
+        currentScene = scene;
+        sentenceIndex = -1;
+        PlayNextSentence();
+    }
+
+    
+
+    public void PlayNextSentence()
+    {
+        // Typing sentences
         StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
+
+
+        // Setting character's name and color
+        personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
+        personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
+
+
+    }
+
+    public bool IsCompleted()
+    {
+        return state == State.COMPLETED;
+    }
+
+    public bool IsLastSentence()
+    {
+        return sentenceIndex + 1 == currentScene.sentences.Count;
     }
 
     private IEnumerator TypeText(string text)
     {
+        barText.text = "";
         state = State.PLAYING;
         int wordIndex = 0;
 
@@ -40,6 +66,8 @@ public class BottomBarControllers : MonoBehaviour
                 state = State.COMPLETED;
                 break;
             }
-        }    
+           
+        }
+        
     }
 }

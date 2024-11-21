@@ -25,4 +25,4 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: deccff9505fbbb54f9eeeb8e7b4fb165, type: 2}
   - text: . . .
     speaker: {fileID: 11400000, guid: 6550c4e49b262ee4cb6bacfd928369ca, type: 2}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 76027119e3e67e945a61502021a99d0a, type: 2}
