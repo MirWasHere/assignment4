@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4658cd0f445dc4f9b4ab83f9faa951, type: 3}
+  m_Name: JokeReaction
+  m_EditorClassIdentifier: 
+  labels:
+  - text: Stare
+    nextScene: {fileID: 11400000, guid: 0749348cd88ed1544a0ebf25ab91e7f4, type: 2}
+  - text: Laugh
+    nextScene: {fileID: 11400000, guid: b565d991e1be6d346b86dee2d65cb297, type: 2}
+  - text: Hit
+    nextScene: {fileID: 11400000, guid: aa2f7b34318135548a8e3caa5a49e5e2, type: 2}

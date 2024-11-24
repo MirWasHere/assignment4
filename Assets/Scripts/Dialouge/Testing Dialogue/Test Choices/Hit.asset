@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5019c53800f914887ad5ae54c68ba7, type: 3}
+  m_Name: Hit
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: '*SMACK!*'
+    speaker: {fileID: 11400000, guid: e9a08339d7b51d34f87f8b9d184afe13, type: 2}
+  - text: OW!! What was that for?!
+    speaker: {fileID: 11400000, guid: deccff9505fbbb54f9eeeb8e7b4fb165, type: 2}
+  - text: For the stupid joke, dimwit,
+    speaker: {fileID: 11400000, guid: 6550c4e49b262ee4cb6bacfd928369ca, type: 2}
+  - text: . . .
+    speaker: {fileID: 11400000, guid: deccff9505fbbb54f9eeeb8e7b4fb165, type: 2}
+  - text: ... wanna hear another one? :D
+    speaker: {fileID: 11400000, guid: deccff9505fbbb54f9eeeb8e7b4fb165, type: 2}
+  nextScene: {fileID: 0}

@@ -16,3 +16,5 @@ public class StoryScene : ScriptableObject
         public Speaker speaker;
     }
 }
+
+public class GameScene : ScriptableObject{ }
