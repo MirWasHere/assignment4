@@ -1,27 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public Color defaultColor;
     public Color hoverColor;
-    public StoryScene scene;
+    private StoryScene scene;
     private TextMeshProUGUI textMesh;
+    private ChooseController controller;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         textMesh = GetComponent<TextMeshProUGUI>();
         textMesh.color = defaultColor;
     }
 
+    public float GetHeight()
+    {
+        return textMesh.rectTransform.sizeDelta.y * textMesh.rectTransform.localScale.y;
+    }
+
+    public void Setup(ChooseScene.ChooseLabel label, ChooseController controller, float y)
+    {
+        scene = label.nextScene;
+        textMesh.text = label.text;
+        this.controller = controller;
+
+        Vector3 position = textMesh.rectTransform.localPosition;
+        position.y = y;
+        textMesh.rectTransform.localPosition = position;
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Clicked");
+        controller.PerformChoose(scene);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
