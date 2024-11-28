@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6027e1aff0cab1408ef2c31bd7914d5, type: 3}
-  m_Name: New Item SO
+  m_Name: water
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
-  <Name>k__BackingField: 
-  <Description>k__BackingField: 
-  <ItemImage>k__BackingField: {fileID: 0}
+  <Name>k__BackingField: Essense of Life
+  <Description>k__BackingField: Arin is very tempted to drink this...
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: 30f71ca73acb75f4d84cb5d20fb2b915,
+    type: 3}

@@ -7,10 +7,37 @@ public class InventoryController : MonoBehaviour
     [SerializeField]
     private UIInventoryPage inventoryUI;
 
-    public int inventorySize = 10;
+    [SerializeField]
+    private InventorySO inventoryData;
 
     private void Start() {
-        inventoryUI.InitializeInventoryUI(inventorySize);
+        PrepareUI();
+        //inventoryData.Initialize();
+    }
+
+    private void PrepareUI() 
+    {
+        inventoryUI.InitializeInventoryUI(inventoryData.Size);
+        inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
+        inventoryUI.OnItemActionRequested += HandleItemActionRequest;
+    }
+
+    private void HandleDescriptionRequest(int itemIndex)
+    {
+        InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+        if (inventoryItem.IsEmpty)
+        {
+            inventoryUI.ResetSelection();
+            return;
+        }
+        ItemSO item = inventoryItem.item;
+        inventoryUI.UpdateDescription(itemIndex, item.ItemImage,
+            item.name, item.Description);
+    }
+
+    private void HandleItemActionRequest(int itemIndex)
+    {
+
     }
 
     public void Update() {
@@ -19,6 +46,12 @@ public class InventoryController : MonoBehaviour
             if (inventoryUI.isActiveAndEnabled == false)
             {
                 inventoryUI.Show();
+                foreach (var item in inventoryData.GetCurrentInventoryState())
+                {
+                    inventoryUI.UpdateData(item.Key,
+                        item.Value.item.ItemImage,
+                        item.Value.quantity);
+                }
             }
             else
             {

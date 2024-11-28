@@ -1148,7 +1148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 4803940581644542572}
-  inventorySize: 10
+  inventoryData: {fileID: 11400000, guid: 9657a560cfec6e64ca8a1be0a8f6516c, type: 2}
 --- !u!1 &125729193
 GameObject:
   m_ObjectHideFlags: 0
@@ -10905,6 +10905,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 725
+      objectReference: {fileID: 0}
+    - target: {fileID: 5056301128428791620, guid: d346a1ed17130c8449bd738ed2856343,
+        type: 3}
+      propertyPath: desc
+      value: This is a sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 5056301128428791620, guid: d346a1ed17130c8449bd738ed2856343,
+        type: 3}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 21300000, guid: dd3631e297d7ef341bfc48751be7ca9d,
+        type: 3}
+    - target: {fileID: 5056301128428791620, guid: d346a1ed17130c8449bd738ed2856343,
+        type: 3}
+      propertyPath: title
+      value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 5056301128428791620, guid: d346a1ed17130c8449bd738ed2856343,
+        type: 3}
+      propertyPath: quantity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6731624774962153215, guid: d346a1ed17130c8449bd738ed2856343,
         type: 3}

@@ -43,6 +43,13 @@ public class UIInventoryPage : MonoBehaviour
 
     }
 
+    internal void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)
+    {
+        itemDescription.SetDescription(itemImage, name, description);
+        DeselectAllItems();
+        items[itemIndex].Select();
+    }
+
     public void UpdateData(int itemIndex,
         Sprite itemImage, int itemQuantity)
     {
@@ -53,11 +60,19 @@ public class UIInventoryPage : MonoBehaviour
     }
 
     private void HandleItemSelection(UIInventoryItem inventoryItemUI) {
-        Debug.Log(inventoryItemUI.name);
+        int index = System.Array.IndexOf(items, inventoryItemUI);
+        if (index == -1)
+            return;
+        OnDescriptionRequested?.Invoke(index);
     }
 
     private void HandleShowItemActions(UIInventoryItem inventoryItemUI) {
-
+        int index = System.Array.IndexOf(items, inventoryItemUI);
+        if (index == -1)
+        {
+            return;
+        }
+        OnItemActionRequested?.Invoke(index);
     }
 
     public void Show() {

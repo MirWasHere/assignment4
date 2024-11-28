@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6027e1aff0cab1408ef2c31bd7914d5, type: 3}
-  m_Name: Apple
+  m_Name: Strawberry
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 0
-  <MaxStackSize>k__BackingField: 1
+  <MaxStackSize>k__BackingField: 20
   <Name>k__BackingField: 
-  <Description>k__BackingField: 
-  <ItemImage>k__BackingField: {fileID: 0}
+  <Description>k__BackingField: Arin questions the strawberry-ness of this strawberry,
+    but who is he to doubt his knowledgable neighbor?
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: e84e6f82d2ef9904c9e089ef5d2758f0,
+    type: 3}
