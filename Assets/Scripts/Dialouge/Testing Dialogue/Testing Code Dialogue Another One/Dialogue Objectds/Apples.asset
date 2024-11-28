@@ -13,7 +13,25 @@ MonoBehaviour:
   m_Name: Apples
   m_EditorClassIdentifier: 
   sentenceTexts:
-  - sentence: ... w h a t  d i d  y o u  d o  t o  m y  a p p l e s . . .
-    charName: Charles
+  - sentence: '. . . '
+    charName: Joe
     charSprite: {fileID: 21300000, guid: 6ed5015ab98acf64a88b958e7310ae83, type: 3}
+  - sentence: Get it?? 'Cuz there's "no bell" so you have to knock?
+    charName: Jerry
+    charSprite: {fileID: -343854207, guid: 242126f61863d2a41a53cab0bc717d31, type: 3}
+  - sentence: . . .
+    charName: Joe
+    charSprite: {fileID: 21300000, guid: 6ed5015ab98acf64a88b958e7310ae83, type: 3}
+  - sentence: Hahaha!!
+    charName: Jerry
+    charSprite: {fileID: -343854207, guid: 242126f61863d2a41a53cab0bc717d31, type: 3}
+  - sentence: . . .
+    charName: Joe
+    charSprite: {fileID: 21300000, guid: 6ed5015ab98acf64a88b958e7310ae83, type: 3}
+  - sentence: Hehe..
+    charName: Jerry
+    charSprite: {fileID: -1963678898, guid: 5987646f2fc694540a9c29b34a9d0030, type: 3}
+  - sentence: Haahh....
+    charName: Jerry
+    charSprite: {fileID: -1963678898, guid: 5987646f2fc694540a9c29b34a9d0030, type: 3}
   responses: []

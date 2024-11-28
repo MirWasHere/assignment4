@@ -13,16 +13,28 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   sentenceTexts:
-  - sentence: Hey, my names Charles
-    charName: Charles
-    charSprite: {fileID: 21300000, guid: 50180e1ada4ffc54385e28d8e7a7e765, type: 3}
-  - sentence: Hey, I'm an alchemist
-    charName: The Alchemist(?)
-    charSprite: {fileID: 21300000, guid: d6ee97d585b9dca4c917d0c837b3d1ad, type: 3}
+  - sentence: Knock, knock!
+    charName: Jerry
+    charSprite: {fileID: -1963678898, guid: 5987646f2fc694540a9c29b34a9d0030, type: 3}
+  - sentence: '*sigh* who''s there...?'
+    charName: Joe
+    charSprite: {fileID: 1593836664, guid: ffa0f239512444c4aa42b36d96cee6d3, type: 3}
+  - sentence: Nobel.
+    charName: Jerry
+    charSprite: {fileID: -1963678898, guid: 5987646f2fc694540a9c29b34a9d0030, type: 3}
+  - sentence: Nobel who.
+    charName: Joe
+    charSprite: {fileID: 1593836664, guid: ffa0f239512444c4aa42b36d96cee6d3, type: 3}
+  - sentence: Nobel, that's why I knocked!!
+    charName: Jerry
+    charSprite: {fileID: -343854207, guid: 242126f61863d2a41a53cab0bc717d31, type: 3}
+  - sentence: . . .
+    charName: 
+    charSprite: {fileID: 0}
   responses:
-  - responseText: Yes
+  - responseText: Laugh
     dialogueObject: {fileID: 11400000, guid: cfc2babdf7034eb4182fe4824bf4f15c, type: 2}
-  - responseText: No
+  - responseText: Hit
     dialogueObject: {fileID: 11400000, guid: 3c343974cbac9a1438a1f35e31277514, type: 2}
-  - responseText: Apples
+  - responseText: Stare
     dialogueObject: {fileID: 11400000, guid: 47f16ce3b7545ae4f979c8e5df01f4ba, type: 2}
