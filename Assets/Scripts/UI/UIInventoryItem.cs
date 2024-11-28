@@ -6,7 +6,7 @@ using TMPro;
 using System;
 using UnityEngine.EventSystems;
 
-public class UIInventoryItem : MonoBehaviour
+public class UIInventoryItem : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField]
     private Image itemImage;
@@ -20,19 +20,6 @@ public class UIInventoryItem : MonoBehaviour
     public event Action<UIInventoryItem> OnItemClicked, OnRightMouseBtnClick;
 
     private bool empty = true; 
-
-    public void OnPointerClick(BaseEventData data)
-    {
-        PointerEventData pointerData = (PointerEventData)data;
-        if (pointerData.button == PointerEventData.InputButton.Right)
-        {
-            OnRightMouseBtnClick?.Invoke(this);
-        }
-        else
-        {
-            OnItemClicked?.Invoke(this);
-        }
-    }
 
     public void Awake()
     {
@@ -64,6 +51,16 @@ public class UIInventoryItem : MonoBehaviour
         borderImage.enabled = true;
     }
 
-    
+    public void OnPointerClick(PointerEventData pointerData)
+    {
+        if (pointerData.button == PointerEventData.InputButton.Right)
+        {
+            OnRightMouseBtnClick?.Invoke(this);
+        }
+        else
+        {
+            OnItemClicked?.Invoke(this);
+        }
+    }
 
 }

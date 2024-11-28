@@ -11,7 +11,23 @@ public class UIInventoryPage : MonoBehaviour
     [SerializeField]
     private RectTransform contentPanel;
 
+    [SerializeField]
+    private UIInventoryDescription itemDescription;
+
+    public event Action<int> OnDescriptionRequested, OnItemActionRequested;
+
     public UIInventoryItem[] items;
+
+    // MOCK TEST DATA DELETE LATER
+    public Sprite image;
+    public int quantity;
+    public string title, desc;
+
+    private void Awake()
+    {
+        Hide();
+        itemDescription.ResetDescription();
+    }
 
     public void InitializeInventoryUI(int inventorySize) {
 
@@ -27,16 +43,40 @@ public class UIInventoryPage : MonoBehaviour
 
     }
 
-    private void HandleItemSelection(UIInventoryItem obj) {
-        Debug.Log(obj.name);
+    public void UpdateData(int itemIndex,
+        Sprite itemImage, int itemQuantity)
+    {
+        if (items.Length > itemIndex)
+        {
+            items[itemIndex].SetData(itemImage, itemQuantity);
+        }
     }
 
-    private void HandleShowItemActions(UIInventoryItem obj) {
+    private void HandleItemSelection(UIInventoryItem inventoryItemUI) {
+        Debug.Log(inventoryItemUI.name);
+    }
+
+    private void HandleShowItemActions(UIInventoryItem inventoryItemUI) {
 
     }
 
     public void Show() {
         gameObject.SetActive(true);
+        ResetSelection();
+    }
+
+    public void ResetSelection() 
+    {
+        itemDescription.ResetDescription();
+        DeselectAllItems();
+    }
+
+    public void DeselectAllItems() 
+    {
+        foreach (UIInventoryItem item in items) {
+            item.Deselect();
+        }
+
     }
 
     public void Hide() {
