@@ -3,98 +3,105 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class UIInventoryPage : MonoBehaviour
+namespace Inventory.UI
 {
-    [SerializeField]
-    private UIInventoryItem itemPrefab;
-
-    [SerializeField]
-    private RectTransform contentPanel;
-
-    [SerializeField]
-    private UIInventoryDescription itemDescription;
-
-    public event Action<int> OnDescriptionRequested, OnItemActionRequested;
-
-    public UIInventoryItem[] items;
-
-    // MOCK TEST DATA DELETE LATER
-    public Sprite image;
-    public int quantity;
-    public string title, desc;
-
-    private void Awake()
+    public class UIInventoryPage : MonoBehaviour
     {
-        Hide();
-        itemDescription.ResetDescription();
-    }
+        [SerializeField]
+        private UIInventoryItem itemPrefab;
 
-    public void InitializeInventoryUI(int inventorySize) {
+        [SerializeField]
+        private RectTransform contentPanel;
 
-        items = new UIInventoryItem[inventorySize];
+        [SerializeField]
+        private UIInventoryDescription itemDescription;
 
-        for (int i = 0; i < inventorySize; i++) {
-            UIInventoryItem uiItem = Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
-            uiItem.transform.SetParent(contentPanel);
-            items[i] = uiItem;
-            uiItem.OnItemClicked += HandleItemSelection;
-            uiItem.OnRightMouseBtnClick += HandleShowItemActions;
-        }
+        public event Action<int> OnDescriptionRequested, OnItemActionRequested;
 
-    }
+        public UIInventoryItem[] items;
 
-    internal void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)
-    {
-        itemDescription.SetDescription(itemImage, name, description);
-        DeselectAllItems();
-        items[itemIndex].Select();
-    }
-
-    public void UpdateData(int itemIndex,
-        Sprite itemImage, int itemQuantity)
-    {
-        if (items.Length > itemIndex)
+        private void Awake()
         {
-            items[itemIndex].SetData(itemImage, itemQuantity);
+            Hide();
+            itemDescription.ResetDescription();
         }
-    }
 
-    private void HandleItemSelection(UIInventoryItem inventoryItemUI) {
-        int index = System.Array.IndexOf(items, inventoryItemUI);
-        if (index == -1)
-            return;
-        OnDescriptionRequested?.Invoke(index);
-    }
+        public void InitializeInventoryUI(int inventorySize) {
 
-    private void HandleShowItemActions(UIInventoryItem inventoryItemUI) {
-        int index = System.Array.IndexOf(items, inventoryItemUI);
-        if (index == -1)
+            items = new UIInventoryItem[inventorySize];
+
+            for (int i = 0; i < inventorySize; i++) {
+                UIInventoryItem uiItem = Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
+                uiItem.transform.SetParent(contentPanel);
+                items[i] = uiItem;
+                uiItem.OnItemClicked += HandleItemSelection;
+                uiItem.OnRightMouseBtnClick += HandleShowItemActions;
+            }
+
+        }
+
+        internal void UpdateDescription(int itemIndex, Sprite itemImage, string name, string description)
         {
-            return;
-        }
-        OnItemActionRequested?.Invoke(index);
-    }
-
-    public void Show() {
-        gameObject.SetActive(true);
-        ResetSelection();
-    }
-
-    public void ResetSelection() 
-    {
-        itemDescription.ResetDescription();
-        DeselectAllItems();
-    }
-
-    public void DeselectAllItems() 
-    {
-        foreach (UIInventoryItem item in items) {
-            item.Deselect();
+            itemDescription.SetDescription(itemImage, name, description);
+            DeselectAllItems();
+            items[itemIndex].Select();
         }
 
-    }
+        public void UpdateData(int itemIndex,
+            Sprite itemImage, int itemQuantity)
+        {
+            if (items.Length > itemIndex)
+            {
+                items[itemIndex].SetData(itemImage, itemQuantity);
+            }
+        }
 
-    public void Hide() {
-        gameObject.SetActive(false);
+        internal void ResetAllItems()
+        {
+            foreach (var item in items)
+            {
+                item.ResetData();
+                item.Deselect();
+            }
+        }
+
+        private void HandleItemSelection(UIInventoryItem inventoryItemUI) {
+            int index = System.Array.IndexOf(items, inventoryItemUI);
+            if (index == -1)
+                return;
+            OnDescriptionRequested?.Invoke(index);
+        }
+
+        private void HandleShowItemActions(UIInventoryItem inventoryItemUI) {
+            int index = System.Array.IndexOf(items, inventoryItemUI);
+            if (index == -1)
+            {
+                return;
+            }
+            OnItemActionRequested?.Invoke(index);
+        }
+
+        public void Show() {
+            gameObject.SetActive(true);
+            ResetSelection();
+        }
+
+        public void ResetSelection() 
+        {
+            itemDescription.ResetDescription();
+            DeselectAllItems();
+        }
+
+        public void DeselectAllItems() 
+        {
+            foreach (UIInventoryItem item in items) {
+                item.Deselect();
+            }
+
+        }
+
+        public void Hide() {
+            gameObject.SetActive(false);
+        }
     }
 }

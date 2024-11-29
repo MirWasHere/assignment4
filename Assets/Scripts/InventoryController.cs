@@ -1,63 +1,92 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Inventory.Model;
+using Inventory.UI;
 
-public class InventoryController : MonoBehaviour
+namespace Inventory
 {
-    [SerializeField]
-    private UIInventoryPage inventoryUI;
-
-    [SerializeField]
-    private InventorySO inventoryData;
-
-    private void Start() {
-        PrepareUI();
-        //inventoryData.Initialize();
-    }
-
-    private void PrepareUI() 
+    public class InventoryController : MonoBehaviour
     {
-        inventoryUI.InitializeInventoryUI(inventoryData.Size);
-        inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
-        inventoryUI.OnItemActionRequested += HandleItemActionRequest;
-    }
+        [SerializeField]
+        private UIInventoryPage inventoryUI;
 
-    private void HandleDescriptionRequest(int itemIndex)
-    {
-        InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
-        if (inventoryItem.IsEmpty)
-        {
-            inventoryUI.ResetSelection();
-            return;
+        [SerializeField]
+        private InventorySO inventoryData;
+
+        public List<InventoryItem> initialItems = new List<InventoryItem>();
+
+        private void Start() {
+            PrepareUI();
+            PrepareInventoryData();
         }
-        ItemSO item = inventoryItem.item;
-        inventoryUI.UpdateDescription(itemIndex, item.ItemImage,
-            item.name, item.Description);
-    }
 
-    private void HandleItemActionRequest(int itemIndex)
-    {
-
-    }
-
-    public void Update() {
-        if (Input.GetKeyDown(KeyCode.I))
+        private void PrepareInventoryData()
         {
-            if (inventoryUI.isActiveAndEnabled == false)
+            inventoryData.Initialize();
+            inventoryData.OnInventoryUpdated += UpdateInventoryUI;
+            foreach (InventoryItem item in initialItems)
             {
-                inventoryUI.Show();
-                foreach (var item in inventoryData.GetCurrentInventoryState())
-                {
-                    inventoryUI.UpdateData(item.Key,
-                        item.Value.item.ItemImage,
-                        item.Value.quantity);
-                }
+                if (item.IsEmpty)
+                    continue;
+                inventoryData.AddItem(item);
             }
-            else
-            {
-                inventoryUI.Hide();
-            }
+        }
 
+        private void UpdateInventoryUI(Dictionary<int, InventoryItem> inventoryState)
+        {
+            inventoryUI.ResetAllItems();
+            foreach (var item in inventoryState)
+            {
+                inventoryUI.UpdateData(item.Key, item.Value.item.ItemImage, 
+                    item.Value.quantity);
+            }
+        }
+
+        private void PrepareUI() 
+        {
+            inventoryUI.InitializeInventoryUI(inventoryData.Size);
+            inventoryUI.OnDescriptionRequested += HandleDescriptionRequest;
+            inventoryUI.OnItemActionRequested += HandleItemActionRequest;
+        }
+
+        private void HandleDescriptionRequest(int itemIndex)
+        {
+            InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+            if (inventoryItem.IsEmpty)
+            {
+                inventoryUI.ResetSelection();
+                return;
+            }
+            ItemSO item = inventoryItem.item;
+            inventoryUI.UpdateDescription(itemIndex, item.ItemImage,
+                item.name, item.Description);
+        }
+
+        private void HandleItemActionRequest(int itemIndex)
+        {
+
+        }
+
+        public void Update() {
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                if (inventoryUI.isActiveAndEnabled == false)
+                {
+                    inventoryUI.Show();
+                    foreach (var item in inventoryData.GetCurrentInventoryState())
+                    {
+                        inventoryUI.UpdateData(item.Key,
+                            item.Value.item.ItemImage,
+                            item.Value.quantity);
+                    }
+                }
+                else
+                {
+                    inventoryUI.Hide();
+                }
+
+            }
         }
     }
 }
