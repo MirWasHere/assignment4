@@ -11,7 +11,7 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private Image charSprite;
     [SerializeField] private TMP_Text textLabel;
     [SerializeField] private TMP_Text nameText;
-    [SerializeField] private DialogueObjecct testDialogue;
+    
     
 
     private ResponseHandler responseHandler;
@@ -23,7 +23,7 @@ public class DialogueUI : MonoBehaviour
         typeWritterEffect = GetComponent<TypeWritterEffect>();
         responseHandler = GetComponent<ResponseHandler>();
         CloseDialogueBox();
-        ShowDialogue(testDialogue);
+        
     }
 
     public void ShowDialogue(DialogueObjecct dialogueObject)
@@ -39,7 +39,16 @@ public class DialogueUI : MonoBehaviour
             //string dialogue = dialogueObject.Dialogue[i];
             string dialogue = dialogueObject.SentenceTexts[i].Sentences;
             nameText.text = dialogueObject.SentenceTexts[i].CharName;
-            charSprite.sprite = dialogueObject.SentenceTexts[i].CharSprite;
+
+            if(dialogueObject.SentenceTexts[i].CharSprite == null)
+            {
+                charSprite.color = new Color(0, 0, 0, 0);
+            }
+            else
+            {
+                charSprite.sprite = dialogueObject.SentenceTexts[i].CharSprite;
+                charSprite.color = Color.white;
+            }
             
             yield return typeWritterEffect.Run(dialogue, textLabel);
 
