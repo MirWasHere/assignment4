@@ -14,6 +14,9 @@ namespace Inventory
         [SerializeField]
         private InventorySO inventoryData;
 
+        [SerializeField]
+        private AudioSource audioSource;
+
         public List<InventoryItem> initialItems = new List<InventoryItem>();
 
         private void Start() {
@@ -65,7 +68,38 @@ namespace Inventory
 
         private void HandleItemActionRequest(int itemIndex)
         {
+            InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+            if (inventoryItem.IsEmpty)
+                return;
 
+            IItemAction itemAction = inventoryItem.item as IItemAction;
+            if(itemAction != null)
+            {
+                inventoryUI.ShowItemAction(itemIndex);
+                inventoryUI.AddAction(itemAction.ActionName, () => PerformAction(itemIndex));
+            }
+        }
+
+        private void PerformAction(int itemIndex) 
+        {
+            InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+            if (inventoryItem.IsEmpty)
+                return;
+
+            IItemAction itemAction = inventoryItem.item as IItemAction;
+            if (itemAction != null)
+            {
+                bool gave = itemAction.PerformAction(gameObject);
+
+                if (gave) {
+                    inventoryData.RemoveItem(itemIndex, 1);
+                    if (audioSource != null)
+                        audioSource.PlayOneShot(itemAction.actionSFX);
+                }
+                    
+                if (inventoryData.GetItemAt(itemIndex).IsEmpty)
+                    inventoryUI.ResetSelection();
+            }
         }
 
         public void Update() {

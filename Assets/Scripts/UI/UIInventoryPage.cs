@@ -20,6 +20,9 @@ namespace Inventory.UI
 
         public UIInventoryItem[] items;
 
+        [SerializeField]
+        private ItemActionPanel actionPanel;
+
         private void Awake()
         {
             Hide();
@@ -92,16 +95,30 @@ namespace Inventory.UI
             DeselectAllItems();
         }
 
+        public void AddAction(string actionName, Action performAction)
+        {
+            actionPanel.AddButon(actionName, performAction);
+        }
+
+        public void ShowItemAction(int itemIndex)
+        {
+            actionPanel.Toggle(true);
+            actionPanel.transform.position = items[itemIndex].transform.position;
+        }
+
         public void DeselectAllItems() 
         {
-            foreach (UIInventoryItem item in items) {
+            foreach (UIInventoryItem item in items)
+            {
                 item.Deselect();
             }
+            actionPanel.Toggle(false);
 
         }
 
         public void Hide() {
             gameObject.SetActive(false);
+            actionPanel.Toggle(false);
         }
     }
 }
