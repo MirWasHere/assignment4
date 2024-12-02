@@ -33,13 +33,20 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+       if(!DialogueInteractable.inConversation)
+       {
         transform.Translate(Vector3.forward * Time.deltaTime * Input.GetAxis("Vertical") * speed);
         transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * turnSpeed);
+       }
     }
 
 
     void OnTriggerEnter(Collider other) 
+<<<<<<< HEAD
       {
+=======
+    {
+>>>>>>> Working-Dialogue
      // Check if the object the player collided with has the "DoorOpen" tag.
         if (other.gameObject.CompareTag("DoorOpen")) 
            {
@@ -108,7 +115,7 @@ public class PlayerController : MonoBehaviour
         {
             countText.text = "Count: " + count.ToString();
         }
-
-
     }
+
+
 }
