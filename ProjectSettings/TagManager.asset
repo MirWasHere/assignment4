@@ -9,6 +9,7 @@ TagManager:
   - DialougeBox
   - Continue
   - Collectible
+  - MayorDoor
   layers:
   - Default
   - TransparentFX
