@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private void PlayScene(StoryScene scene)
+    public void PlayScene(StoryScene scene)
     {
         StartCoroutine(SwitchScene(scene));
     }
