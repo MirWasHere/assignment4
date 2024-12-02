@@ -6,64 +6,64 @@ using TMPro;
 using System;
 using UnityEngine.EventSystems;
 
-public class UIInventoryItem : MonoBehaviour
+namespace Inventory.UI
 {
-    [SerializeField]
-    private Image itemImage;
-
-    [SerializeField]
-    private TMP_Text quantityTxt;
-
-    [SerializeField]
-    private Image borderImage;
-
-    public event Action<UIInventoryItem> OnItemClicked, OnRightMouseBtnClick;
-
-    private bool empty = true; 
-
-    public void OnPointerClick(BaseEventData data)
+    public class UIInventoryItem : MonoBehaviour, IPointerClickHandler
     {
-        PointerEventData pointerData = (PointerEventData)data;
-        if (pointerData.button == PointerEventData.InputButton.Right)
+        [SerializeField]
+        private Image itemImage;
+
+        [SerializeField]
+        private TMP_Text quantityTxt;
+
+        [SerializeField]
+        private Image borderImage;
+
+        public event Action<UIInventoryItem> OnItemClicked, OnRightMouseBtnClick;
+
+        private bool empty = true; 
+
+        public void Awake()
         {
-            OnRightMouseBtnClick?.Invoke(this);
+            ResetData();
+            Deselect();
         }
-        else
+
+        public void ResetData()
         {
-            OnItemClicked?.Invoke(this);
+            itemImage.gameObject.SetActive(false);
+            empty = true;
         }
+
+        public void Deselect()
+        {
+            borderImage.enabled = false;
+        }
+
+        public void SetData(Sprite sprite, int quantity)
+        {
+            itemImage.gameObject.SetActive(true);
+            itemImage.sprite = sprite;
+            quantityTxt.text = quantity + "";
+            empty = false;
+        }
+
+        public void Select()
+        {
+            borderImage.enabled = true;
+        }
+
+        public void OnPointerClick(PointerEventData pointerData)
+        {
+            if (pointerData.button == PointerEventData.InputButton.Right)
+            {
+                OnRightMouseBtnClick?.Invoke(this);
+            }
+            else
+            {
+                OnItemClicked?.Invoke(this);
+            }
+        }
+
     }
-
-    public void Awake()
-    {
-        ResetData();
-        Deselect();
-    }
-
-    public void ResetData()
-    {
-        itemImage.gameObject.SetActive(false);
-        empty = true;
-    }
-
-    public void Deselect()
-    {
-        borderImage.enabled = false;
-    }
-
-    public void SetData(Sprite sprite, int quantity)
-    {
-        itemImage.gameObject.SetActive(true);
-        itemImage.sprite = sprite;
-        quantityTxt.text = quantity + "";
-        empty = false;
-    }
-
-    public void Select()
-    {
-        borderImage.enabled = true;
-    }
-
-    
-
 }

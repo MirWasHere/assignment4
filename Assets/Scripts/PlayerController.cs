@@ -5,12 +5,16 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Inventory.Model;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 2f;
     [SerializeField] private float turnSpeed = 45f;
     private Rigidbody rb;
+
+    [SerializeField]
+    private InventorySO inventoryData;
 
     public TextMeshProUGUI countText;
     private int count;
@@ -34,7 +38,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-        void OnTriggerEnter(Collider other) 
+    void OnTriggerEnter(Collider other) 
       {
      // Check if the object the player collided with has the "DoorOpen" tag.
         if (other.gameObject.CompareTag("DoorOpen")) 
@@ -69,10 +73,18 @@ public class PlayerController : MonoBehaviour
                     Debug.Log("...");
                     wonThrice = true;
                 }
+
+                Item item = other.GetComponent<Item>();
+                if (item != null)
+                {
+                    int reminder = inventoryData.AddItem(item.InventoryItem, item.Quantity);
+                    if (reminder != 0)
+                        item.Quantity = reminder;
+                }
           }
       }
 
-      void SetCountText()
+    void SetCountText()
     {
         if(wonThrice)
         {
