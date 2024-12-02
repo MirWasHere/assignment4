@@ -12,7 +12,7 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private TMP_Text textLabel;
     [SerializeField] private TMP_Text nameText;
     
-    
+    public DialogueObjecct currDialogue = null;
 
     private ResponseHandler responseHandler;
     
@@ -28,6 +28,7 @@ public class DialogueUI : MonoBehaviour
 
     public void ShowDialogue(DialogueObjecct dialogueObject)
     {
+        currDialogue = dialogueObject;
         dialogueBox.SetActive(true);
         StartCoroutine(StepThroughDialogue(dialogueObject));
     }
@@ -69,6 +70,7 @@ public class DialogueUI : MonoBehaviour
 
     private void CloseDialogueBox()
     {
+        currDialogue = null;
         dialogueBox.SetActive(false);
         textLabel.text = "";
     }

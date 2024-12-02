@@ -31,6 +31,11 @@ namespace Inventory.Model
         [field: SerializeField]
         public AudioClip actionSFX {get; private set;}
 
+        [field: SerializeField]
+        public DialogueObjecct dialogueObject;
+
+        private DialogueInteractable dialogueInteractable;
+
         public bool PerformAction(GameObject character)
         {
             // code to give to merchant
@@ -39,8 +44,13 @@ namespace Inventory.Model
             // if (dialogueGive(this.Name) == true)
             // return true
             // return false outside of the if
-                
-            return true;
+
+            bool gave = dialogueInteractable.TriggerDialogueObject(dialogueObject);
+
+            if (gave)
+                return true;
+
+            return false;
         }
 
     }

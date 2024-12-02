@@ -8,7 +8,7 @@ public class SentenceText
 {
     [SerializeField] private string sentence;
     [SerializeField] private string charName;
-    [SerializeField] private Sprite charSprite;
+    [SerializeField] public Sprite charSprite;
 
     public string Sentences => sentence;
     public string CharName => charName;

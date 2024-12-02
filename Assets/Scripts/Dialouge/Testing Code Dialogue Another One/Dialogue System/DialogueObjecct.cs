@@ -8,9 +8,11 @@ public class DialogueObjecct : ScriptableObject
 {
    // [SerializeField] [TextArea] private string[] dialogue; //
 
-    [SerializeField] private SentenceText[] sentenceTexts;
+    [SerializeField] public SentenceText[] sentenceTexts;
 
     [SerializeField] private Response[] responses;
+
+    [SerializeField] public bool givable = false;
 
   //  public string[] Dialogue => dialogue; //
 

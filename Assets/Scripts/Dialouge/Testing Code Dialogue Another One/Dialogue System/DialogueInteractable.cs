@@ -8,6 +8,8 @@ public class DialogueInteractable : MonoBehaviour
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualCue;
     [SerializeField] private DialogueObjecct dialogueObject;
+    [SerializeField] private DialogueObjecct dontGiveMe;
+
     public DialogueUI dialogueUI;
     
     private bool playerInRange;
@@ -57,9 +59,35 @@ public class DialogueInteractable : MonoBehaviour
     }
     
     // Begins dialogue given by trigger
-    public void TriggerDialogueObject()
+    public bool TriggerDialogueObject()
     {
         visualCue.SetActive(false);
         dialogueUI.ShowDialogue(dialogueObject);
+        return true;
+    }
+
+    public bool TriggerDialogueObject(DialogueObjecct dialogue) {
+        // if dialogue is currently NOT running, don't let the character give anything
+        if (dialogueUI.currDialogue == null) 
+        {
+            return false;
+        }
+        // if dialogue IS running, but it's not time to give yet, 
+        // don't let the character give anything + make the character say:
+        // "DONT GIVE ME ANYTHING"
+        else if(dialogueUI.currDialogue != null && !dialogueUI.currDialogue.givable)
+        {
+            // make the character sprite = to character of previously running dialogue
+            dontGiveMe.sentenceTexts[0].charSprite = dialogueUI.currDialogue.sentenceTexts[0].charSprite;
+            dialogueUI.ShowDialogue(dontGiveMe);
+            // reset the character sprite back to nothing
+            dontGiveMe.sentenceTexts[0].charSprite = null;
+            return false;
+        }
+
+        // if dialogue is running and you CAN give, run dialogue of the object (which was passed in)
+        visualCue.SetActive(false);
+        dialogueUI.ShowDialogue(dialogue);
+        return true;
     }
 }
