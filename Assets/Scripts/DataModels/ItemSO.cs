@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+
 namespace Inventory.Model
 {
     [CreateAssetMenu]
@@ -34,6 +35,9 @@ namespace Inventory.Model
         [field: SerializeField]
         public DialogueObjecct dialogueObject;
 
+        [field: SerializeField]
+        public DialogueObjecct dontGiveMe;
+
         private DialogueInteractable dialogueInteractable;
 
         public bool PerformAction(GameObject character)
@@ -45,7 +49,13 @@ namespace Inventory.Model
             // return true
             // return false outside of the if
 
-            bool gave = dialogueInteractable.TriggerDialogueObject(dialogueObject);
+            Debug.Log(GameObject.FindGameObjectWithTag("Trigger"));
+
+            Debug.Log(GameObject.FindGameObjectWithTag("Trigger").GetComponent<DialogueInteractable>());
+
+            dialogueInteractable = GameObject.FindGameObjectWithTag("Trigger").GetComponent<DialogueInteractable>();
+
+            bool gave = dialogueInteractable.TriggerDialogueObject(dialogueObject, dontGiveMe);
 
             if (gave)
                 return true;

@@ -8,7 +8,6 @@ public class DialogueInteractable : MonoBehaviour
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualCue;
     [SerializeField] private DialogueObjecct dialogueObject;
-    [SerializeField] private DialogueObjecct dontGiveMe;
 
     public DialogueUI dialogueUI;
     
@@ -66,7 +65,11 @@ public class DialogueInteractable : MonoBehaviour
         return true;
     }
 
-    public bool TriggerDialogueObject(DialogueObjecct dialogue) {
+    public bool TriggerDialogueObject(DialogueObjecct dialogue, DialogueObjecct dontGive) {
+
+        dialogueObject = dialogue;
+        dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
+        
         // if dialogue is currently NOT running, don't let the character give anything
         if (dialogueUI.currDialogue == null) 
         {
@@ -78,16 +81,15 @@ public class DialogueInteractable : MonoBehaviour
         else if(dialogueUI.currDialogue != null && !dialogueUI.currDialogue.givable)
         {
             // make the character sprite = to character of previously running dialogue
-            dontGiveMe.sentenceTexts[0].charSprite = dialogueUI.currDialogue.sentenceTexts[0].charSprite;
-            dialogueUI.ShowDialogue(dontGiveMe);
+            dontGive.sentenceTexts[0].charSprite = dialogueUI.currDialogue.sentenceTexts[0].charSprite;
+            dialogueUI.ShowDialogue(dontGive);
             // reset the character sprite back to nothing
-            dontGiveMe.sentenceTexts[0].charSprite = null;
+            dontGive.sentenceTexts[0].charSprite = null;
             return false;
         }
 
         // if dialogue is running and you CAN give, run dialogue of the object (which was passed in)
-        visualCue.SetActive(false);
-        dialogueUI.ShowDialogue(dialogue);
+        dialogueUI.ShowDialogue(dialogueObject);
         return true;
     }
 }
