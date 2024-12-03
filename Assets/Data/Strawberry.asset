@@ -21,3 +21,6 @@ MonoBehaviour:
     type: 3}
   <actionSFX>k__BackingField: {fileID: 8300000, guid: 1e4d438f9d286304b918672a47cba77f,
     type: 3}
+  dialogueObject: {fileID: 11400000, guid: 437e87d7dabc63a44ae5ba8da4694136, type: 2}
+  dontGiveMe: {fileID: 11400000, guid: 3c343974cbac9a1438a1f35e31277514, type: 2}
+  dialogueUI: {fileID: 0}
