@@ -65,6 +65,7 @@ public class DialogueUI : MonoBehaviour
         else
         {
             CloseDialogueBox();
+            DialogueInteractable.inConversation = false;
         }
     }
 

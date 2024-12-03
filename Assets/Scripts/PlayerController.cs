@@ -33,8 +33,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime * Input.GetAxis("Vertical") * speed);
-        transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * turnSpeed);
+        if(!DialogueInteractable.inConversation)
+        {
+            transform.Translate(Vector3.forward * Time.deltaTime * Input.GetAxis("Vertical") * speed);
+            transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * turnSpeed);
+        }
     }
 
 
