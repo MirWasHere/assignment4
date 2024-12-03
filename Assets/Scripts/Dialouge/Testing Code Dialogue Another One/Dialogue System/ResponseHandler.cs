@@ -31,16 +31,19 @@ public class ResponseHandler : MonoBehaviour
             responseButton.GetComponent<Button>().onClick.AddListener(() => OnPickedResponse(response));
         
             tempResponseButtons.Add(responseButton);
-
+            Debug.Log("Set up button");
+            
             responseBoxHeight += responseButtomTemplate.sizeDelta.y;
 
         }
         responseBox.sizeDelta = new Vector2(responseBox.sizeDelta.x, responseBoxHeight);
         responseBox.gameObject.SetActive(true);
+        Debug.Log("Setup complete!");
     }
 
     private void OnPickedResponse(Response response)
     {
+        Debug.Log("Clicked!");
         responseBox.gameObject.SetActive(false);
 
         foreach(GameObject button in tempResponseButtons)

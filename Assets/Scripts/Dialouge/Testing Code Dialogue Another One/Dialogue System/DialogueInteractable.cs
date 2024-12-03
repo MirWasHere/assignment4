@@ -15,6 +15,10 @@ public class DialogueInteractable : MonoBehaviour
     public static bool inConversation;
     // Add animator if time
 
+    // private void Start(){
+    //     dialogueObject = new DialogueObjecct[10];
+    // }
+
     private void Awake()
     {
         playerInRange = false;
@@ -27,7 +31,6 @@ public class DialogueInteractable : MonoBehaviour
         // When the player is in range
         if(playerInRange && !inConversation)
         {
-            Debug.Log("In Range: " + playerInRange + "\nIn Conversation: " + inConversation);
             visualCue.gameObject.SetActive(true);
             if(Input.GetKeyDown(KeyCode.E)){
                 TriggerDialogueObject();
@@ -36,7 +39,6 @@ public class DialogueInteractable : MonoBehaviour
         }
         else
         {
-            Debug.Log("In Range: " + playerInRange + "\nIn Conversation: " + inConversation);
             visualCue.SetActive(false);
         }
     }
