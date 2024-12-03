@@ -6,6 +6,7 @@ using UnityEngine.UI;
 [System.Serializable]
 public class SentenceText
 {
+    [TextArea(3, 10)]
     [SerializeField] private string sentence;
     [SerializeField] private string charName;
     [SerializeField] public Sprite charSprite;

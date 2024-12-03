@@ -16,6 +16,10 @@ public class DialogueInteractable : MonoBehaviour
     public static bool inConversation;
     // Add animator if time
 
+    // private void Start(){
+    //     dialogueObject = new DialogueObjecct[10];
+    // }
+
     private void Awake()
     {
         playerInRange = false;
@@ -28,7 +32,6 @@ public class DialogueInteractable : MonoBehaviour
         // When the player is in range
         if(playerInRange && !inConversation)
         {
-            Debug.Log("In Range: " + playerInRange + "\nIn Conversation: " + inConversation);
             visualCue.gameObject.SetActive(true);
             if(Input.GetKeyDown(KeyCode.E)){
                 TriggerDialogueObject();
@@ -37,7 +40,6 @@ public class DialogueInteractable : MonoBehaviour
         }
         else
         {
-            Debug.Log("In Range: " + playerInRange + "\nIn Conversation: " + inConversation);
             visualCue.SetActive(false);
         }
     }
@@ -68,27 +70,28 @@ public class DialogueInteractable : MonoBehaviour
     }
 
     public bool TriggerDialogueObject(DialogueObjecct dialogue) {
-        // if dialogue is currently NOT running, don't let the character give anything
-        if (dialogueUI.currDialogue == null) 
-        {
-            return false;
-        }
-        // if dialogue IS running, but it's not time to give yet, 
-        // don't let the character give anything + make the character say:
-        // "DONT GIVE ME ANYTHING"
-        else if(dialogueUI.currDialogue != null && !dialogueUI.currDialogue.givable)
-        {
-            // make the character sprite = to character of previously running dialogue
-            dontGiveMe.sentenceTexts[0].charSprite = dialogueUI.currDialogue.sentenceTexts[0].charSprite;
-            dialogueUI.ShowDialogue(dontGiveMe);
-            // reset the character sprite back to nothing
-            dontGiveMe.sentenceTexts[0].charSprite = null;
-            return false;
-        }
+        // // if dialogue is currently NOT running, don't let the character give anything
+        // if (dialogueUI.currDialogue == null) 
+        // {
+        //     return false;
+        // }
+        // // if dialogue IS running, but it's not time to give yet, 
+        // // don't let the character give anything + make the character say:
+        // // "DONT GIVE ME ANYTHING"
+        // else if(dialogueUI.currDialogue != null && !dialogueUI.currDialogue.givable)
+        // {
+        //     // make the character sprite = to character of previously running dialogue
+        //     dontGiveMe.sentenceTexts[0].charSprite = dialogueUI.currDialogue.sentenceTexts[0].charSprite;
+        //     dialogueUI.ShowDialogue(dontGiveMe);
+        //     // reset the character sprite back to nothing
+        //     dontGiveMe.sentenceTexts[0].charSprite = null;
+        //     return false;
+        // }
 
-        // if dialogue is running and you CAN give, run dialogue of the object (which was passed in)
-        visualCue.SetActive(false);
-        dialogueUI.ShowDialogue(dialogue);
-        return true;
+        // // if dialogue is running and you CAN give, run dialogue of the object (which was passed in)
+        // visualCue.SetActive(false);
+        // dialogueUI.ShowDialogue(dialogue);
+        bool sf = false;
+        return sf;
     }
 }

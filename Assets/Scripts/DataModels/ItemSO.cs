@@ -45,9 +45,9 @@ namespace Inventory.Model
             // return true
             // return false outside of the if
 
-            bool gave = dialogueInteractable.TriggerDialogueObject(dialogueObject);
-
-            if (gave)
+            // bool gave = dialogueInteractable.TriggerDialogueObject(dialogueObject);
+            Debug.Log(dialogueInteractable.TriggerDialogueObject(dialogueObject));
+            if (false)
                 return true;
 
             return false;
