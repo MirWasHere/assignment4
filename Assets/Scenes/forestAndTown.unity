@@ -58090,7 +58090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1899110025}
-  dialogueObject: {fileID: 11400000, guid: 437e87d7dabc63a44ae5ba8da4694136, type: 2}
+  dialogueObject: {fileID: 11400000, guid: 774aabd9a1186ea4c903d0957d6a6211, type: 2}
   dialogueUI: {fileID: 1904333530}
 --- !u!65 &1211394809
 BoxCollider:
