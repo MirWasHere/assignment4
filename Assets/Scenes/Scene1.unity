@@ -9060,7 +9060,9 @@ MonoBehaviour:
   inventoryUI: {fileID: 4803940581644542572}
   inventoryData: {fileID: 11400000, guid: 9657a560cfec6e64ca8a1be0a8f6516c, type: 2}
   audioSource: {fileID: 0}
-  initialItems: []
+  initialItems:
+  - quantity: 10
+    item: {fileID: 11400000, guid: bed648cfeb6aebe46ae0e012b326e887, type: 2}
 --- !u!1 &1548193951
 GameObject:
   m_ObjectHideFlags: 0
