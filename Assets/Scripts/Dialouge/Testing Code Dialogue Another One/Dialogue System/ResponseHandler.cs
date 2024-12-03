@@ -31,7 +31,7 @@ public class ResponseHandler : MonoBehaviour
             responseButton.GetComponent<Button>().onClick.AddListener(() => OnPickedResponse(response));
         
             tempResponseButtons.Add(responseButton);
-
+            
             responseBoxHeight += responseButtomTemplate.sizeDelta.y;
 
         }
