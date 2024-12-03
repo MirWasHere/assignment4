@@ -33,10 +33,20 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // Player cannot move if in a conversation
         if(!DialogueInteractable.inConversation)
         {
             transform.Translate(Vector3.forward * Time.deltaTime * Input.GetAxis("Vertical") * speed);
             transform.Rotate(Vector3.up, Input.GetAxis("Horizontal") * Time.deltaTime * turnSpeed);
+            // Shift to sprint
+            if(Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                speed *= 2;
+            }
+            if(Input.GetKeyUp(KeyCode.RightShift) || Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                speed /= 2;
+            }
         }
     }
 
