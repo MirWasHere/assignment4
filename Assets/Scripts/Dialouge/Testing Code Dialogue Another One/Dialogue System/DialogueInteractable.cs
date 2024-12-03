@@ -25,8 +25,9 @@ public class DialogueInteractable : MonoBehaviour
     private void Update()
     {
         // When the player is in range
-        if(playerInRange)
+        if(playerInRange && !inConversation)
         {
+            Debug.Log("In Range: " + playerInRange + "\nIn Conversation: " + inConversation);
             visualCue.gameObject.SetActive(true);
             if(Input.GetKeyDown(KeyCode.E)){
                 TriggerDialogueObject();
@@ -35,8 +36,8 @@ public class DialogueInteractable : MonoBehaviour
         }
         else
         {
+            Debug.Log("In Range: " + playerInRange + "\nIn Conversation: " + inConversation);
             visualCue.SetActive(false);
-            inConversation = false;
         }
     }
 
