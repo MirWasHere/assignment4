@@ -4564,6 +4564,7 @@ RectTransform:
   - {fileID: 1229419342}
   - {fileID: 1506778638}
   - {fileID: 213478048}
+  - {fileID: 881587080}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5524,6 +5525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 881587080}
   - component: {fileID: 881587079}
+  - component: {fileID: 881587081}
   m_Layer: 0
   m_Name: trigger
   m_TagString: Trigger
@@ -5554,13 +5556,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881587078}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.77813, y: 512.19727, z: -191.83507}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -898.22186, y: -27.802734, z: -191.83507}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 721793093}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &881587081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881587078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d559ea2cf16ab5540985cf410bc4535f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &910857606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9046,11 +9060,7 @@ MonoBehaviour:
   inventoryUI: {fileID: 4803940581644542572}
   inventoryData: {fileID: 11400000, guid: 9657a560cfec6e64ca8a1be0a8f6516c, type: 2}
   audioSource: {fileID: 0}
-  initialItems:
-  - quantity: 1
-    item: {fileID: 11400000, guid: e54594d7047c31149829526037c38915, type: 2}
-  - quantity: 10
-    item: {fileID: 11400000, guid: bed648cfeb6aebe46ae0e012b326e887, type: 2}
+  initialItems: []
 --- !u!1 &1548193951
 GameObject:
   m_ObjectHideFlags: 0
@@ -12114,4 +12124,3 @@ SceneRoots:
   - {fileID: 1009344649}
   - {fileID: 721793093}
   - {fileID: 577014748}
-  - {fileID: 881587080}
