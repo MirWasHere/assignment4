@@ -3782,6 +3782,7 @@ GameObject:
   - component: {fileID: 577014748}
   - component: {fileID: 577014747}
   - component: {fileID: 577014746}
+  - component: {fileID: 577014749}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3839,6 +3840,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &577014749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577014745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d559ea2cf16ab5540985cf410bc4535f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &580400002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5525,6 +5538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 881587080}
   - component: {fileID: 881587079}
+  - component: {fileID: 881587081}
   m_Layer: 0
   m_Name: trigger
   m_TagString: Trigger
@@ -5562,6 +5576,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 721793093}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &881587081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881587078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d559ea2cf16ab5540985cf410bc4535f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &910857606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9048,8 +9074,6 @@ MonoBehaviour:
   inventoryData: {fileID: 11400000, guid: 9657a560cfec6e64ca8a1be0a8f6516c, type: 2}
   audioSource: {fileID: 0}
   initialItems:
-  - quantity: 1
-    item: {fileID: 11400000, guid: e54594d7047c31149829526037c38915, type: 2}
   - quantity: 10
     item: {fileID: 11400000, guid: bed648cfeb6aebe46ae0e012b326e887, type: 2}
 --- !u!1 &1548193951
