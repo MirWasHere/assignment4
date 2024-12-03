@@ -16,7 +16,7 @@ MonoBehaviour:
   - sentence: door.
     charName: Airin
     charSprite: {fileID: 0}
-  - sentence: 'Ah, you need my help to get home and the mayor sent you here... '
+  - sentence: '... ah, you need my help to get home and the mayor sent you here... '
     charName: Alchemist
     charSprite: {fileID: 0}
   - sentence: always doing the hard work in this town... I SHOULD GET THE TITLE OF

@@ -16,7 +16,7 @@ MonoBehaviour:
   - sentence: sky
     charName: Airin
     charSprite: {fileID: 0}
-  - sentence: OH that hole in the sky?
+  - sentence: ...OH that hole in the sky?
     charName: Alchemist
     charSprite: {fileID: 0}
   - sentence: YOU CAN GO UP THERE?? THERE'S A WORLD UP THERE???
@@ -25,5 +25,30 @@ MonoBehaviour:
   - sentence: Oh my... the amount of doors this has opened...
     charName: Alchemist
     charSprite: {fileID: 0}
-  responses: []
+  - sentence: ....
+    charName: Alchemist
+    charSprite: {fileID: 0}
+  - sentence: Well then I guess the only option...
+    charName: Alchemist
+    charSprite: {fileID: 0}
+  - sentence: OK! I'll need you to collect some materials for me so I can get you
+      hoeme
+    charName: Alchemist
+    charSprite: {fileID: 0}
+  - sentence: . . .
+    charName: Airin
+    charSprite: {fileID: 0}
+  - sentence: '(whispers) And they call ME weird... '
+    charName: Alchemist
+    charSprite: {fileID: 0}
+  - sentence: Anyways, here's a list of the things you need. Now go!
+    charName: Alchemist
+    charSprite: {fileID: 0}
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 11400000, guid: 5e516b996f69de545aedfa23c8b58a10, type: 2}
+  - responseText: money.
+    dialogueObject: {fileID: 11400000, guid: 8f93065b87675ac4994e490c89de5544, type: 2}
+  - responseText: I'm broke.
+    dialogueObject: {fileID: 11400000, guid: 1a54096f583b9bc408a8ad56471f893a, type: 2}
   givable: 0

@@ -16,6 +16,9 @@ MonoBehaviour:
   - sentence: . . .
     charName: Airin
     charSprite: {fileID: 0}
+  - sentence: ....
+    charName: Mayor
+    charSprite: {fileID: 0}
   - sentence: Well then, would you like to stay a little? Peruse the market? I hear
       they have some fine trinkets!
     charName: Mayor
@@ -27,3 +30,4 @@ MonoBehaviour:
     dialogueObject: {fileID: 11400000, guid: a5076b046cede914995ae7d47b04ae8f, type: 2}
   - responseText: '*shrug*'
     dialogueObject: {fileID: 11400000, guid: 59574ba2820e8084e942349b967cb08c, type: 2}
+  givable: 0

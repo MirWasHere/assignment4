@@ -16,7 +16,7 @@ MonoBehaviour:
   - sentence: . . .
     charName: Airin
     charSprite: {fileID: 0}
-  - sentence: OH that hole in the sky?
+  - sentence: ... OH the hole in the sky?
     charName: Alchemist
     charSprite: {fileID: 0}
   - sentence: YOU CAN GO UP THERE?? THERE'S A WORLD UP THERE???

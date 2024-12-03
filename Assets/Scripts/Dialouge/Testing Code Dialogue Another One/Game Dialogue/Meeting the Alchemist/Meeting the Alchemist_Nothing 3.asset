@@ -16,7 +16,10 @@ MonoBehaviour:
   - sentence: . . .
     charName: Airin
     charSprite: {fileID: 0}
-  - sentence: Oh money... uhhh
+  - sentence: ...
+    charName: Alchemist
+    charSprite: {fileID: 0}
+  - sentence: Oh money!... uhhh
     charName: Alchemist
     charSprite: {fileID: 0}
   - sentence: ' Well just trade something you got. Whatever you got can''t be as

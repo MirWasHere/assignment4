@@ -16,8 +16,11 @@ MonoBehaviour:
   - sentence: . . .
     charName: Airin
     charSprite: {fileID: 0}
-  - sentence: "Well if you\u2019d like to go home, I\u2019m sure the mad scienti-
-      I MEAN ALCHEMIST can help you haha, he\u2019s right down stairs."
+  - sentence: "Well if you\u2019d like to go home, I\u2019m sure the mad scienti-"
+    charName: Mayor
+    charSprite: {fileID: 0}
+  - sentence: "I MEAN ALCHEMIST can help you haha, he\u2019s right down stairs."
     charName: Mayor
     charSprite: {fileID: 0}
   responses: []
+  givable: 0

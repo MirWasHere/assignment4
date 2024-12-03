@@ -20,4 +20,8 @@ MonoBehaviour:
       I MEAN ALCHEMIST can help you haha, he\u2019s right down stairs."
     charName: Mayor
     charSprite: {fileID: 0}
+  - sentence: "I MEAN ALCHEMIST can help you haha, he\u2019s right down stairs."
+    charName: Mayor
+    charSprite: {fileID: 0}
   responses: []
+  givable: 0

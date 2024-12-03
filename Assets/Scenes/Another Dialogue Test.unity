@@ -1214,7 +1214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 556845929}
-  dialogueObject: {fileID: 11400000, guid: c5fefbbe47ba34b449ef730fb81d3c4d, type: 2}
+  dialogueObject: {fileID: 11400000, guid: 2725cc2720a13b14ead806f0459e612a, type: 2}
   dialogueUI: {fileID: 2134393028}
 --- !u!1 &913528324
 GameObject:
