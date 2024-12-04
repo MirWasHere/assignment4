@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: frog response 1
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: "EXCUSE ME??? IT\u2019S CALLED MUCUS. M-U-C-U-S. GET IT RIGHT. "
+    charName: frog
+    charSprite: {fileID: 0}
+  - sentence: "YOU ALL HAVE NO RESPECT FOR ME. AND YOU KNOW WHAT? FOR THAT I WON\u2019T
+      GIVE IT TO YOU."
+    charName: frog
+    charSprite: {fileID: 0}
+  responses:
+  - responseText: ...(holds out ax)
+    dialogueObject: {fileID: 11400000, guid: 09ff6e8b9ddc648aeab6d27b1ef6dd71, type: 2}
+  - responseText: ax.
+    dialogueObject: {fileID: 11400000, guid: 09ff6e8b9ddc648aeab6d27b1ef6dd71, type: 2}
+  - responseText: "I\u2019m so sorry to have offended you! I have an ax I can trade?
+      I hear it\u2019s good quality?"
+    dialogueObject: {fileID: 11400000, guid: 09ff6e8b9ddc648aeab6d27b1ef6dd71, type: 2}
+  givable: 0

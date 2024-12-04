@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: green man responses 2
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: 'Five strawberries for 10 jars of strawberry jolly ranchers???? '
+    charName: green man
+    charSprite: {fileID: 0}
+  - sentence: WHAT A STEAL!! HOW KIND YOU ARE FINE SIR!!! YOUR KINDNESS WILL NOT
+      BE FORGOTTEN!!
+    charName: green man
+    charSprite: {fileID: 0}
+  responses: []
+  givable: 0

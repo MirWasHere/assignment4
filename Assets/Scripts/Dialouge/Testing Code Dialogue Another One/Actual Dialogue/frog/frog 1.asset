@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: frog 1
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: WHAT DO YOU WANT.
+    charName: frog
+    charSprite: {fileID: 0}
+  - sentence: "Oh right, let\u2019s just sit here and think because we have ALLLLLL
+      the time in the world!"
+    charName: frog
+    charSprite: {fileID: 0}
+  - sentence: "NO. YOU COME KNOWING WHAT YOU WANT. I DON\u2019T HAVE TIME FOR THIS."
+    charName: frog
+    charSprite: {fileID: 0}
+  - sentence: YOU HAVE FIVE SECONDS TO TELL ME WHAT YOU WANT BEFORE I THROW YOU ACROSS
+      THE FOREST. FIVE, FOUR, THREE-
+    charName: frog
+    charSprite: {fileID: 0}
+  responses:
+  - responseText: "...(while pointing to the mucus coming off the frog\u2019s body)"
+    dialogueObject: {fileID: 11400000, guid: 3e66ac657d82a4248b68fb373dc53f6f, type: 2}
+  - responseText: slime.
+    dialogueObject: {fileID: 11400000, guid: 3e66ac657d82a4248b68fb373dc53f6f, type: 2}
+  - responseText: "I\u2019m not sure how to say this but can I have some of your
+      slime?"
+    dialogueObject: {fileID: 11400000, guid: 3e66ac657d82a4248b68fb373dc53f6f, type: 2}
+  givable: 0
