@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6027e1aff0cab1408ef2c31bd7914d5, type: 3}
+  m_Name: Tree Organs
+  m_EditorClassIdentifier: 
+  <IsStackable>k__BackingField: 0
+  <MaxStackSize>k__BackingField: 1
+  <Name>k__BackingField: Tree Organs
+  <Description>k__BackingField: The organs of a tree.. wait does this emplty that
+    the bark is also part of the organs... IS THE ENTIRE TREE THE ORGANS OF THE TREE?!
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: 72f4d3edb8440014e9575f029842e9cc,
+    type: 3}
+  <actionSFX>k__BackingField: {fileID: 8300000, guid: 1e4d438f9d286304b918672a47cba77f,
+    type: 3}
+  dialogueObject: {fileID: 0}
+  dontGiveMe: {fileID: 0}
