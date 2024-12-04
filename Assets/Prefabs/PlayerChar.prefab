@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7461602150550640238}
   - component: {fileID: 2710110515504834494}
-  - component: {fileID: 3623029765120330144}
   m_Layer: 0
   m_Name: PlayerChar
   m_TagString: Untagged
@@ -46,20 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d559ea2cf16ab5540985cf410bc4535f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3623029765120330144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5994860875502760138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0360fe6f48d26d0418baa360b348aadc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryUI: {fileID: 0}
-  inventorySize: 10
 --- !u!1001 &3704075274427700852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166,6 +151,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 816030857728359083}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8af61b34713bcc74ca6f976aa99fca63,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1393195251021382149}
   m_SourcePrefab: {fileID: 100100000, guid: 8af61b34713bcc74ca6f976aa99fca63, type: 3}
 --- !u!4 &3813772265027236255 stripped
 Transform:
@@ -193,6 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   turnSpeed: 45
+  inventoryData: {fileID: 0}
   countText: {fileID: 0}
 --- !u!54 &7021271632071425601
 Rigidbody:
@@ -242,3 +232,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.445346, y: 3.4640543, z: 1.6934657}
   m_Center: {x: 0, y: 1.796417, z: 0.3}
+--- !u!114 &1393195251021382149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4586613887756872485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0360fe6f48d26d0418baa360b348aadc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryUI: {fileID: 0}
+  inventoryData: {fileID: 11400000, guid: 9657a560cfec6e64ca8a1be0a8f6516c, type: 2}
+  audioSource: {fileID: 0}
+  initialItems: []
