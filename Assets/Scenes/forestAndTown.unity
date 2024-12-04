@@ -4920,7 +4920,7 @@ PrefabInstance:
         type: 3}
       propertyPath: actionPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 107081112}
     - target: {fileID: 5056301128428791620, guid: d346a1ed17130c8449bd738ed2856343,
         type: 3}
       propertyPath: items.Array.size
@@ -5031,6 +5031,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d346a1ed17130c8449bd738ed2856343, type: 3}
+--- !u!114 &95249189 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5056301128428791620, guid: d346a1ed17130c8449bd738ed2856343,
+    type: 3}
+  m_PrefabInstance: {fileID: 95249188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a0ce0479b9c4c4eb8b4ebf038e057e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &96010827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109392,6 +109404,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1393195251021382149, guid: c7eb7a03649ee1742a35573cb86003ce,
+        type: 3}
+      propertyPath: inventoryUI
+      value: 
+      objectReference: {fileID: 95249189}
     - target: {fileID: 3623029765120330144, guid: c7eb7a03649ee1742a35573cb86003ce,
         type: 3}
       propertyPath: m_Enabled
