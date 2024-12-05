@@ -121,7 +121,7 @@ public class DialogueUI : MonoBehaviour
             if (currDialogue.giving) {
 
                 InventoryController inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventoryController>();
-                Debug.Log(inventory.addItem(currDialogue.item));
+                Debug.Log(inventory.addItem(currDialogue.item, currDialogue.giveNum));
 
             }
             CloseDialogueBox();

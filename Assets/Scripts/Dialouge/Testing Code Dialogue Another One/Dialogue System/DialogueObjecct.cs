@@ -19,6 +19,8 @@ public class DialogueObjecct : ScriptableObject
 
     [SerializeField] public bool giving = false;
 
+    [SerializeField] public int giveNum = 0;
+
     [SerializeField] public ItemSO item;
 
   //  public string[] Dialogue => dialogue; //

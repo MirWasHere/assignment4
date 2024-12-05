@@ -22,4 +22,5 @@ MonoBehaviour:
   responses: []
   givable: 0
   giving: 1
+  giveNum: 1
   item: {fileID: 11400000, guid: 3fbec24eb10418f4194d4d6e3afc44ca, type: 2}

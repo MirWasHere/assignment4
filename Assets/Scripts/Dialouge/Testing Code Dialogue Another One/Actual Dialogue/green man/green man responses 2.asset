@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: green man responses 2
   m_EditorClassIdentifier: 
   sentenceTexts:
-  - sentence: O-oh such a sorrowful tale! WORRY NOT I SHALL CONTINUE TO WIELD THIS
-      BATTLE AXE UNTIL THE END OF TIME!
+  - sentence: Five strawberries for a jar of liquid artificial flavoring????
     charName: green man
     charSprite: {fileID: -1955620519, guid: 3febb40a5fa33c04da06f4a0cdf3db99, type: 3}
   - sentence: HOW KIND YOU ARE FINE SIR!!! YOUR KINDNESS WILL NOT BE FORGOTTEN!!
@@ -23,4 +22,5 @@ MonoBehaviour:
   responses: []
   givable: 0
   giving: 1
+  giveNum: 2
   item: {fileID: 11400000, guid: eb43b36e35c0fdf44b10c39f179f3609, type: 2}
