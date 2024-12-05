@@ -100,7 +100,8 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            countText.text = "Count: " + count.ToString();
+
+            countText.text = "COLLECT STRAWBERRIES!\nCount: " + count.ToString() + "/15";
         }
 
 
