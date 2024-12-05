@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 using Inventory;
 using Inventory.Model;
+using UnityEngine.SceneManagement;
 
 public class DialogueUI : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private Image charSprite;
     [SerializeField] private TMP_Text textLabel;
     [SerializeField] private TMP_Text nameText;
+
+    [SerializeField] private DialogueObjecct finalDialogue;
     
     public DialogueObjecct currDialogue = null;
 
@@ -126,6 +129,18 @@ public class DialogueUI : MonoBehaviour
             }
             CloseDialogueBox();
             DialogueInteractable.inConversation = false;
+            
+            if (dialogueObject.finalDialogueInTown) {
+                Debug.Log(SceneManager.GetActiveScene().name);
+                SceneManager.LoadScene("Final");
+
+                transform.position = new Vector3(3f, 3.0f, 3f);
+                ShowDialogue(finalDialogue);
+            }
+
+            if (dialogueObject.finalDialogueCompletely) {
+                GameObject.FindGameObjectWithTag("CanvasFinal").SetActive(true);
+            }
         }
         Debug.Log(dialogueObject.readTimes);
     }

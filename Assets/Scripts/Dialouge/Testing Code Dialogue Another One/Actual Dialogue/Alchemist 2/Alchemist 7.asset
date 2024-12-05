@@ -10,18 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
-  m_Name: Alchemist 1
+  m_Name: Alchemist 7
   m_EditorClassIdentifier: 
   sentenceTexts:
-  - sentence: "Ah! You\u2019re back!! Well let\u2019s see what you\u2019ve got\u2026"
-    charName: Alchemist
-    charSprite: {fileID: 0}
-  - sentence: Do you have the Essense of Life?
+  - sentence: "Oh haha I was just thirsty *drinks from the bag* yeah the mayor fired
+      my assistant because he decided I didn\u2019t need one\u2026by the way if you\u2019re
+      looking for a job\u2026"
     charName: Alchemist
     charSprite: {fileID: 0}
   responses:
-  - responseText: No...
-    dialogueObject: {fileID: 11400000, guid: 4b943da96ce0e884b9fd6c0172d8ed95, type: 2}
-  givable: 1
+  - responseText: pay
+    dialogueObject: {fileID: 0}
+  - responseText: "You didn\u2019t even give me money to buy these materials, how
+      can I trust you to pay me for working?"
+    dialogueObject: {fileID: 0}
+  givable: 0
   giving: 0
+  giveNum: 0
   item: {fileID: 0}

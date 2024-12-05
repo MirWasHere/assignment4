@@ -10,19 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
-  m_Name: Alchemist 4
+  m_Name: Final Dialogue
   m_EditorClassIdentifier: 
-  sentenceTexts:
-  - sentence: Hmm yes, it is as sweet as I remember.
-    charName: Alchemist
-    charSprite: {fileID: 0}
-  - sentence: Now! The lifeline string?
-    charName: Alchemist
-    charSprite: {fileID: 0}
-  responses:
-  - responseText: No...
-    dialogueObject: {fileID: 11400000, guid: 4b943da96ce0e884b9fd6c0172d8ed95, type: 2}
-  givable: 1
+  sentenceTexts: []
+  responses: []
+  finalDialogueInTown: 0
+  givable: 0
   giving: 0
   giveNum: 0
   item: {fileID: 0}

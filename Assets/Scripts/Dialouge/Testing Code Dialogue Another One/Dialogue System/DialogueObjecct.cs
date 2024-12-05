@@ -13,7 +13,13 @@ public class DialogueObjecct : ScriptableObject
 
     [SerializeField] private Response[] responses;
 
+<<<<<<< Updated upstream
     [SerializeField] public SecondaryDialogue[] secondaryDialogue;
+=======
+    [SerializeField] public bool finalDialogueInTown = false;
+
+    [SerializeField] public bool finalDialogueCompletely = false;
+>>>>>>> Stashed changes
 
     [SerializeField] public bool givable = false;
 

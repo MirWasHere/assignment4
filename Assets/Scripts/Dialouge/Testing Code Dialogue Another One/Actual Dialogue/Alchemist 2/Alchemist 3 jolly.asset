@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
-  m_Name: Alchemist 2
+  m_Name: Alchemist 3 jolly
   m_EditorClassIdentifier: 
   sentenceTexts:
-  - sentence: Great! How about the Tree Organs?
+  - sentence: 'Oh wow! That must have been hard to chop down. '
+    charName: Alchemist
+    charSprite: {fileID: 0}
+  - sentence: Hmmm, what about the non-crystalline transparent solids?
     charName: Alchemist
     charSprite: {fileID: 0}
   responses:
@@ -21,4 +24,5 @@ MonoBehaviour:
     dialogueObject: {fileID: 11400000, guid: 4b943da96ce0e884b9fd6c0172d8ed95, type: 2}
   givable: 1
   giving: 0
+  giveNum: 0
   item: {fileID: 0}
