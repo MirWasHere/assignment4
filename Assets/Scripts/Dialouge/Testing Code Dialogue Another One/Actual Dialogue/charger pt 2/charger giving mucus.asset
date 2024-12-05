@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceTexts:
   - sentence: ...
-    charName: Arin
+    charName: Airin
     charSprite: {fileID: 1607587547, guid: 47651bf3e3e10c14989124001dec53a5, type: 3}
   responses:
   - responseText: ...(holds out mucus jar)
@@ -25,3 +25,5 @@ MonoBehaviour:
       to trade for the lifeline string?"
     dialogueObject: {fileID: 11400000, guid: 8ea82d9cb330045ddb04290c913f9e62, type: 2}
   givable: 0
+  giving: 0
+  item: {fileID: 0}

@@ -16,5 +16,10 @@ MonoBehaviour:
   - sentence: No problem kid. You keep yourself out of trouble now.
     charName: Raccoon
     charSprite: {fileID: -844932969, guid: d33fecfe869755c4d95826b1b91c76ee, type: 3}
+  - sentence: (Now I can get the "Tree Organs" the Alchemist requires...)
+    charName: Airin
+    charSprite: {fileID: 1607587547, guid: 47651bf3e3e10c14989124001dec53a5, type: 3}
   responses: []
   givable: 0
+  giving: 1
+  item: {fileID: 11400000, guid: 3fbec24eb10418f4194d4d6e3afc44ca, type: 2}

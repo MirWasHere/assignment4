@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceTexts:
   - sentence: ...
-    charName: Arin
+    charName: Airin
     charSprite: {fileID: 1607587547, guid: 47651bf3e3e10c14989124001dec53a5, type: 3}
   responses:
   - responseText: ...
@@ -24,3 +24,5 @@ MonoBehaviour:
   - responseText: Mayhaps you may enjoy a succulent strawberry for your troubles?
     dialogueObject: {fileID: 11400000, guid: 1f2c41b7d36a54d75a213630b92059cc, type: 2}
   givable: 1
+  giving: 0
+  item: {fileID: 0}

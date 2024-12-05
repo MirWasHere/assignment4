@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceTexts:
   - sentence: ...
-    charName: Arin
+    charName: Airin
     charSprite: {fileID: 1607587547, guid: 47651bf3e3e10c14989124001dec53a5, type: 3}
   responses:
   - responseText: ...(holds out jar of jolly ranchers)
@@ -25,3 +25,5 @@ MonoBehaviour:
       it\u2019s all I have but I really want to go home"
     dialogueObject: {fileID: 11400000, guid: 139533c32767e4a61b76ed5334e36fec, type: 2}
   givable: 0
+  giving: 0
+  item: {fileID: 0}

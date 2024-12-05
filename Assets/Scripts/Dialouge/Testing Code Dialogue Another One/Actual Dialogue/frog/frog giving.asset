@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceTexts:
   - sentence: ...
-    charName: Arin
+    charName: Airin
     charSprite: {fileID: 1607587547, guid: 47651bf3e3e10c14989124001dec53a5, type: 3}
   responses:
   - responseText: ...(holds out ax)
@@ -25,3 +25,5 @@ MonoBehaviour:
       I hear it\u2019s good quality?"
     dialogueObject: {fileID: 11400000, guid: 09ff6e8b9ddc648aeab6d27b1ef6dd71, type: 2}
   givable: 0
+  giving: 0
+  item: {fileID: 0}

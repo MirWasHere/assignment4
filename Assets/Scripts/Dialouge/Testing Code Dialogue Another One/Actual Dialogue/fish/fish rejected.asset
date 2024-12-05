@@ -21,7 +21,9 @@ MonoBehaviour:
     charName: fish
     charSprite: {fileID: 312739241, guid: 33af24618a3978a40829eb9a5233a586, type: 3}
   - sentence: ...
-    charName: Arin
+    charName: Airin
     charSprite: {fileID: 1607587547, guid: 47651bf3e3e10c14989124001dec53a5, type: 3}
   responses: []
   givable: 0
+  giving: 0
+  item: {fileID: 0}
