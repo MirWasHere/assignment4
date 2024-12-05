@@ -46,10 +46,13 @@ public class PlayerController : MonoBehaviour
                 speed /= 2;
             }
         }
-        if(SceneManager.GetActiveScene().name == "Alchemy Lab")
-        {
-           transform.localScale += new Vector3(1, 0, 1);
-        }
+        // if(SceneManager.GetActiveScene().name == "Alchemy Lab")
+        // {
+        //    transform.localScale += new Vector3(1, 1, 1);
+        // }
+        // else{
+        //     transform.localScale += new Vector3(0, 0, 0);
+        // }
     }
 
 

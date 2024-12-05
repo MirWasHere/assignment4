@@ -13,6 +13,8 @@ public class DialogueObjecct : ScriptableObject
 
     [SerializeField] private Response[] responses;
 
+    [SerializeField] public SecondaryDialogue[] secondaryDialogue;
+
     [SerializeField] public bool givable = false;
 
     [SerializeField] public bool giving = false;
@@ -23,7 +25,12 @@ public class DialogueObjecct : ScriptableObject
 
     public SentenceText[] SentenceTexts => sentenceTexts;
 
+    public SecondaryDialogue[] SecondaryDialogues => secondaryDialogue;
+
     public bool HasResponses => Responses != null && Responses.Length > 0;
 
     public Response[] Responses => responses;
+
+
+    public int readTimes = 0;
 }

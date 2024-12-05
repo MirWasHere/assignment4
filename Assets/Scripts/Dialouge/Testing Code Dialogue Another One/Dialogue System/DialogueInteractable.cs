@@ -13,6 +13,8 @@ public class DialogueInteractable : MonoBehaviour
     
     private bool playerInRange;
     public static bool inConversation;
+
+    public static string objectTag;
     // Add animator if time
 
     // private void Start(){
@@ -24,7 +26,7 @@ public class DialogueInteractable : MonoBehaviour
         playerInRange = false;
         inConversation = false;
         visualCue.SetActive(false);
-
+        objectTag = visualCue.tag;
         dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
     }
 
