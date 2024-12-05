@@ -45367,7 +45367,7 @@ GameObject:
   - component: {fileID: 941158000}
   - component: {fileID: 941158001}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Alchemist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63016,7 +63016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cd4294b4190ad24a854d242198ac1d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 941157999}
+  visualCue: {fileID: 1435542798}
   dialogueObject: {fileID: 11400000, guid: c5fefbbe47ba34b449ef730fb81d3c4d, type: 2}
   dialogueUI: {fileID: 0}
   objectTag: 
@@ -72598,7 +72598,7 @@ GameObject:
   - component: {fileID: 1435542801}
   - component: {fileID: 1435542800}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Visual Cue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
