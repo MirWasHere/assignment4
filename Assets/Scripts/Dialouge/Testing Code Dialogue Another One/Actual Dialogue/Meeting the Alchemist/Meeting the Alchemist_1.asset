@@ -27,4 +27,11 @@ MonoBehaviour:
     dialogueObject: {fileID: 11400000, guid: a09377d6a1b1f3e4a810b46449690e1e, type: 2}
   - responseText: I need your help
     dialogueObject: {fileID: 11400000, guid: ac952bbb1cdc33646851dbba87336d36, type: 2}
+  secondaryDialogue: {fileID: 11400000, guid: ba0ed666516eb0f499d69b0192e0cec6, type: 2}
+  finalDialogueInTown: 0
+  finalDialogueCompletely: 0
   givable: 0
+  giving: 0
+  giveNum: 0
+  item: {fileID: 0}
+  readTimes: 0
