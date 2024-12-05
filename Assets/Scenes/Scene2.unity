@@ -736,7 +736,7 @@ MonoBehaviour:
     - I could do it myself, but there wouldn't be a game if you didn't do it for
       me, haha!
     - Just head out that door to your right to head out back. Whenever your ready...
-    tests: 00000100
+    tests: 00000000
 --- !u!65 &182008572
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2844,7 +2844,7 @@ Transform:
   m_GameObject: {fileID: 953998959}
   serializedVersion: 2
   m_LocalRotation: {x: 0.16408245, y: -0.014747274, z: 0.0024532978, w: 0.9863333}
-  m_LocalPosition: {x: -0.49, y: 6.09, z: -0.11}
+  m_LocalPosition: {x: -0.49, y: 6.02, z: -0.83}
   m_LocalScale: {x: 0.73129994, y: 0.73130006, z: 0.7313}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3274,8 +3274,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3764,8 +3764,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0.215, y: 1}
-  m_AnchoredPosition: {x: 8.500122, y: 22.956451}
-  m_SizeDelta: {x: 13, y: 48.07289}
+  m_AnchoredPosition: {x: 30.642212, y: 37.7177}
+  m_SizeDelta: {x: 57.2841, y: 77.5956}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1242863036
 CanvasRenderer:
@@ -3822,8 +3822,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5517,7 +5517,7 @@ Transform:
   m_GameObject: {fileID: 1702824504}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.48654, y: -0.89956284, z: 13.17434}
+  m_LocalPosition: {x: 32.48654, y: -0.89956284, z: 19}
   m_LocalScale: {x: 3.9140413, y: 3.0916624, z: 2.3843307}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5672,8 +5672,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.4}
-  m_AnchoredPosition: {x: 0, y: 20}
-  m_SizeDelta: {x: 0, y: 38.800003}
+  m_AnchoredPosition: {x: 0, y: -24.2841}
+  m_SizeDelta: {x: 0, y: -49.7681}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1712830809
 MonoBehaviour:
@@ -6128,7 +6128,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c6559dc7184f6844ba0fde53236e97e6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 28.8
+      value: 32.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6559dc7184f6844ba0fde53236e97e6,
         type: 3}

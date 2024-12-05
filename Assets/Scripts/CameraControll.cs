@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -19,5 +20,11 @@ public class CameraController : MonoBehaviour
     void LateUpdate()
     {
         transform.position = player.transform.position + offset;
+        // if(SceneManager.GetActiveScene().name == "forestAndTown")
+        // {
+        //     transform.eulerAngles.y = player.transform.eulerAngles.y;
+        //     transform.eulerAngles.x = player.transform.eulerAngles.x;
+        //     transform.eulerAngles.z = player.transform.eulerAngles.z;
+        // }
     }
 }

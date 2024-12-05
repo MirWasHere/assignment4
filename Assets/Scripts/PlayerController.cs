@@ -27,8 +27,6 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent <Rigidbody>();
         count = 0;
         won = false;
-        winTwice = false;
-        wonThrice = false;
     }
 
     void Update()
@@ -59,7 +57,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log(SceneManager.GetActiveScene().name);
                 SceneManager.LoadScene("Scene2");
 
-                 transform.position = new Vector3(3f, 3.0f, 8f);
+                 transform.position = new Vector3(3f, 3.0f, 3f);
           }
           else if (other.gameObject.CompareTag("DoorOpen2")) 
            {
@@ -73,18 +71,10 @@ public class PlayerController : MonoBehaviour
                 other.gameObject.SetActive(false);
                 count = count + 1;
                 SetCountText();
-                if(count >= 9){
-                    Debug.Log("YAY!");
-                    won = true;
-                }
-                if(count >= 14){
-                    Debug.Log("um");
-                    winTwice = true;
-                }
-                if(count >= 19)
+                if(count >= 2)
                 {
-                    Debug.Log("...");
-                    wonThrice = true;
+                    Debug.Log("Strawberries Aquired?");
+                    won = true;
                 }
 
                 Item item = other.GetComponent<Item>();
@@ -99,23 +89,14 @@ public class PlayerController : MonoBehaviour
 
     void SetCountText()
     {
-        if(wonThrice)
-        {
-            countText.text = "You know you don't get anything extra for getting all of them, right..?\n";
-            countText.text += "Count: " + count.ToString();
-        }
-        
-        else if(winTwice)
-        {
-            countText.text = "You Can Stop Now...\n";
-            countText.text += "Count: " + count.ToString();
+        if(won)
+        {   countText.text = "Count: " + count.ToString();
 
-        }
-        
-        else if(won)
-        {
-            countText.text = "You Win!!\n";
-            countText.text += "Count: " + count.ToString();
+            // Setting new scene (until transition is added. maybe??)
+            Debug.Log(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("forestAndTown");
+
+            transform.position = new Vector3(122f, 15f, -82f);
         }
         else
         {
