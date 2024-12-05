@@ -14,6 +14,8 @@ TagManager:
   - Canvas
   - Item
   - Sign
+  - CanvasFinal
+  - MayorDoorExit
   layers:
   - Default
   - TransparentFX

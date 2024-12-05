@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(7.65f, 7.9f, 12f);
             transform.Rotate(90, 0, 0);
+
         }
     }
 
@@ -84,6 +85,13 @@ public class PlayerController : MonoBehaviour
                 Debug.Log(SceneManager.GetActiveScene().name);
                 SceneManager.LoadScene("Alchemy Lab");
                 transform.position = new Vector3(0.68f, 3.81469f, -10f);
+                
+          }
+          else if (other.gameObject.CompareTag("MayorDoorExit")) 
+           {
+                Debug.Log(SceneManager.GetActiveScene().name);
+                SceneManager.LoadScene("forestAndTown");
+                transform.position = new Vector3(-350.59f, 2.71f, 32.92f);
                 
           }
           else if (other.gameObject.CompareTag("Collectible")) 
