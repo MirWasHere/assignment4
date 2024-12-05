@@ -70,10 +70,11 @@ public class DialogueUI : MonoBehaviour
         }
         else
         {
+            Debug.Log(currDialogue.giving);
             if (currDialogue.giving) {
 
                 InventoryController inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventoryController>();
-                inventory.addItem(currDialogue.item);
+                Debug.Log(inventory.addItem(currDialogue.item));
 
             }
             CloseDialogueBox();

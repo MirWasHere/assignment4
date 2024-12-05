@@ -4631,12 +4631,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1113002121}
   - {fileID: 1229419342}
-  - {fileID: 1506778638}
   - {fileID: 213478048}
   - {fileID: 881587080}
   - {fileID: 637059200}
+  - {fileID: 1113002121}
+  - {fileID: 1506778638}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9159,9 +9159,7 @@ MonoBehaviour:
   inventoryUI: {fileID: 4803940581644542572}
   inventoryData: {fileID: 11400000, guid: 9657a560cfec6e64ca8a1be0a8f6516c, type: 2}
   audioSource: {fileID: 0}
-  initialItems:
-  - quantity: 10
-    item: {fileID: 11400000, guid: bed648cfeb6aebe46ae0e012b326e887, type: 2}
+  initialItems: []
 --- !u!1 &1548193951
 GameObject:
   m_ObjectHideFlags: 0

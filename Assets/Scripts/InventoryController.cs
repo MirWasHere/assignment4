@@ -43,6 +43,7 @@ namespace Inventory
                 return false;
             }
 
+            inventoryData.AddItem(item, 1);
             return true;
 
         }
