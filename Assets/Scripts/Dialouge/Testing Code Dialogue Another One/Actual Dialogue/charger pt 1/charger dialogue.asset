@@ -23,4 +23,11 @@ MonoBehaviour:
     dialogueObject: {fileID: 11400000, guid: f39a77aaa83c7446b96aa8348d5fdf3b, type: 2}
   - responseText: "I\u2019m interested in this lifeline string, trade for a strawberry?"
     dialogueObject: {fileID: 11400000, guid: f39a77aaa83c7446b96aa8348d5fdf3b, type: 2}
+  secondaryDialogue: {fileID: 11400000, guid: e33b3385b00bd42d2bb756d99a0443ee, type: 2}
+  finalDialogueInTown: 0
+  finalDialogueCompletely: 0
   givable: 0
+  giving: 0
+  giveNum: 0
+  item: {fileID: 0}
+  readTimes: 0
