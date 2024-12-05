@@ -24,3 +24,11 @@ MonoBehaviour:
     dialogueObject: {fileID: 11400000, guid: a50a2281ca44ed8448d7f9263461d529, type: 2}
   - responseText: Disagree
     dialogueObject: {fileID: 11400000, guid: 105d804dac69a4a4b87ea7ebde3fb18c, type: 2}
+  secondaryDialogue: {fileID: 11400000, guid: cfc2babdf7034eb4182fe4824bf4f15c, type: 2}
+  finalDialogueInTown: 0
+  finalDialogueCompletely: 0
+  givable: 0
+  giving: 0
+  giveNum: 0
+  item: {fileID: 0}
+  readTimes: 0
