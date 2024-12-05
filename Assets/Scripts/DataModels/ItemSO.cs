@@ -43,6 +43,9 @@ namespace Inventory.Model
         [field: SerializeField]
         public string characterName;
 
+        [field: SerializeField]
+        public string characterName2;
+
         public bool PerformAction(GameObject character)
         {
             // code to give to merchant
@@ -58,7 +61,7 @@ namespace Inventory.Model
 
             dialogueInteractable = GameObject.FindGameObjectWithTag("Trigger").GetComponent<DialogueInteractable>();
 
-            bool gave = dialogueInteractable.TriggerDialogueObject(dialogueObject, dontGiveMe, characterName);
+            bool gave = dialogueInteractable.TriggerDialogueObject(dialogueObject, dontGiveMe, characterName, characterName2);
 
             if (gave)
                 return true;
