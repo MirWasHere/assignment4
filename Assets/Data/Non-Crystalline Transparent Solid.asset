@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Non-Crystalline Transparent Solid
   m_EditorClassIdentifier: 
   <IsStackable>k__BackingField: 0
-  <MaxStackSize>k__BackingField: 1
+  <MaxStackSize>k__BackingField: 2
   <Name>k__BackingField: Non-Crystalline Transparent Solid
   <Description>k__BackingField: The jar is sticky, warm, and smells faintly of nostalgic
     strawberry  jolly ranchers. Airin's very tempted to take a little lick. Airin
@@ -23,6 +23,7 @@ MonoBehaviour:
   <actionSFX>k__BackingField: {fileID: 8300000, guid: 1e4d438f9d286304b918672a47cba77f,
     type: 3}
   dialogueObject: {fileID: 11400000, guid: f4ce321786b04ca4ca9ab365b4560064, type: 2}
+  dialogueObject2: {fileID: 11400000, guid: 6d38d6da4ecf2394fb8d64402822ecd3, type: 2}
   dontGiveMe: {fileID: 11400000, guid: 08d9775922f27f44cba9a0a5d6a6543b, type: 2}
   characterName: Raccoon
-  characterName2: no one
+  characterName2: Alchemist

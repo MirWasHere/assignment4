@@ -36,14 +36,14 @@ namespace Inventory
             }
         }
 
-        public bool addItem(ItemSO item) {
+        public bool addItem(ItemSO item, int num) {
 
             if (item == null)
             {
                 return false;
             }
 
-            inventoryData.AddItem(item, 1);
+            inventoryData.AddItem(item, num);
             return true;
 
         }

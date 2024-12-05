@@ -36,6 +36,9 @@ namespace Inventory.Model
         public DialogueObjecct dialogueObject;
 
         [field: SerializeField]
+        public DialogueObjecct dialogueObject2;
+
+        [field: SerializeField]
         public DialogueObjecct dontGiveMe;
 
         private DialogueInteractable dialogueInteractable;
@@ -61,7 +64,7 @@ namespace Inventory.Model
 
             dialogueInteractable = GameObject.FindGameObjectWithTag("Trigger").GetComponent<DialogueInteractable>();
 
-            bool gave = dialogueInteractable.TriggerDialogueObject(dialogueObject, dontGiveMe, characterName, characterName2);
+            bool gave = dialogueInteractable.TriggerDialogueObject(dialogueObject, dialogueObject2, dontGiveMe, characterName, characterName2);
 
             if (gave)
                 return true;

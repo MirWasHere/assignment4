@@ -70,9 +70,8 @@ public class DialogueInteractable : MonoBehaviour
         return true;
     }
 
-    public bool TriggerDialogueObject(DialogueObjecct dialogue, DialogueObjecct dontGive, string name, string name2) {
+    public bool TriggerDialogueObject(DialogueObjecct dialogue, DialogueObjecct dialogue2, DialogueObjecct dontGive, string name, string name2) {
 
-        dialogueObject = dialogue;
         dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
         
         // if dialogue is currently NOT running, don't let the character give anything
@@ -96,6 +95,12 @@ public class DialogueInteractable : MonoBehaviour
             
         }
         
+        if (name.Equals(dialogueUI.currDialogue.sentenceTexts[0].CharName)) {
+            dialogueObject = dialogue;
+        }
+        else {
+            dialogueObject = dialogue2;
+        }
         dialogueUI.ClearResponses();
         // if dialogue is running and you CAN give, run dialogue of the object (which was passed in)
         dialogueUI.ShowDialogue(dialogueObject);
