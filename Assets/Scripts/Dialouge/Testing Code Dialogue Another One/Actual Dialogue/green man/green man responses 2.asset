@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceTexts:
   - sentence: O-oh such a sorrowful tale! WORRY NOT I SHALL CONTINUE TO WIELD THIS
-      BATTLE AX UNTIL THE END OF TIME!
+      BATTLE AXE UNTIL THE END OF TIME!
     charName: green man
     charSprite: {fileID: -1955620519, guid: 3febb40a5fa33c04da06f4a0cdf3db99, type: 3}
   - sentence: HOW KIND YOU ARE FINE SIR!!! YOUR KINDNESS WILL NOT BE FORGOTTEN!!

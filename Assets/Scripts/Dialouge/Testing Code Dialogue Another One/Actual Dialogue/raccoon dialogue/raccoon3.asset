@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceTexts:
   - sentence: "...*sigh*...I don\u2019t normally do this but I\u2019ll make you a
-      deal. I\u2019ll take a jar of jolly ranchers for an old ax I got."
+      deal. I\u2019ll take a jar of jolly ranchers for an old axe I got."
     charName: Raccoon
     charSprite: {fileID: 1601289944, guid: ab535c14fa8cb964291cd852de5cfd8c, type: 3}
   - sentence: "I never sold it because it\u2019s uneven and overall not good enough
@@ -30,3 +30,5 @@ MonoBehaviour:
       it!!"
     dialogueObject: {fileID: 11400000, guid: 413c83619cb5830449475ecdecc10c4d, type: 2}
   givable: 0
+  giving: 0
+  item: {fileID: 0}
