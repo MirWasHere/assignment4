@@ -55,4 +55,15 @@ public class ResponseHandler : MonoBehaviour
         dialogueUI.ShowDialogue(response.DialogueObjecct);
     }
 
+    public void ClearResponses() 
+    {
+        responseBox.gameObject.SetActive(false);
+
+        foreach(GameObject button in tempResponseButtons)
+        {
+            Destroy(button);
+        }
+        tempResponseButtons.Clear();
+    }
+
 }

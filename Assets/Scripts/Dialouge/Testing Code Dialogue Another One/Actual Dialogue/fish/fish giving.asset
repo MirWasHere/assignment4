@@ -23,6 +23,6 @@ MonoBehaviour:
     dialogueObject: {fileID: 11400000, guid: 1f2c41b7d36a54d75a213630b92059cc, type: 2}
   - responseText: Mayhaps you may enjoy a succulent strawberry for your troubles?
     dialogueObject: {fileID: 11400000, guid: 1f2c41b7d36a54d75a213630b92059cc, type: 2}
-  givable: 1
+  givable: 0
   giving: 0
   item: {fileID: 0}

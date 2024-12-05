@@ -25,3 +25,4 @@ MonoBehaviour:
   dialogueObject: {fileID: 11400000, guid: f4ce321786b04ca4ca9ab365b4560064, type: 2}
   dontGiveMe: {fileID: 11400000, guid: 08d9775922f27f44cba9a0a5d6a6543b, type: 2}
   characterName: Raccoon
+  characterName2: no one
