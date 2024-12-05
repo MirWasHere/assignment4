@@ -38,9 +38,11 @@ namespace Inventory
 
         public bool addItem(ItemSO item) {
 
-            if (item != null)
+            if (item == null)
+            {
                 return false;
-            
+            }
+
             inventoryData.AddItem(item, 1);
             return true;
 
@@ -106,6 +108,8 @@ namespace Inventory
                     inventoryData.RemoveItem(itemIndex, 1);
                     if (audioSource != null)
                         audioSource.PlayOneShot(itemAction.actionSFX);
+                    
+                    inventoryUI.Hide();
                 }
                     
                 if (inventoryData.GetItemAt(itemIndex).IsEmpty)

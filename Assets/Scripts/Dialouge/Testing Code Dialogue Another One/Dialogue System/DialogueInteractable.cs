@@ -83,16 +83,20 @@ public class DialogueInteractable : MonoBehaviour
         // if dialogue IS running, but it's not time to give yet, 
         // don't let the character give anything + make the character say:
         // "DONT GIVE ME ANYTHING"
-        else if(dialogueUI.currDialogue != null && !dialogueUI.currDialogue.givable 
-            && (!name.Equals(dialogueUI.currDialogue.sentenceTexts[0].CharName) && (name2 == null || name2.Equals(dialogueUI.currDialogue.sentenceTexts[0].CharName))))
+        else if(dialogueUI.currDialogue.givable == false || (!name.Equals(dialogueUI.currDialogue.sentenceTexts[0].CharName) 
+            && !name2.Equals(dialogueUI.currDialogue.sentenceTexts[0].CharName)))
         {
+            dialogueUI.ClearResponses();
+
             // make the character sprite = to character of previously running dialogue
             dontGive.sentenceTexts[0].setCharSprite(dialogueUI.currDialogue.sentenceTexts[0].CharSprite);
             dontGive.sentenceTexts[0].setCharName(dialogueUI.currDialogue.sentenceTexts[0].CharName);
             dialogueUI.ShowDialogue(dontGive);
             return false;
+            
         }
-
+        
+        dialogueUI.ClearResponses();
         // if dialogue is running and you CAN give, run dialogue of the object (which was passed in)
         dialogueUI.ShowDialogue(dialogueObject);
         return true;

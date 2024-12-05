@@ -35,6 +35,10 @@ public class DialogueUI : MonoBehaviour
         StartCoroutine(StepThroughDialogue(dialogueObject));
     }
 
+    public void ClearResponses() {
+        responseHandler.ClearResponses();
+    }
+
     private  IEnumerator StepThroughDialogue(DialogueObjecct dialogueObject)
     {
         for( int i = 0; i < dialogueObject.SentenceTexts.Length; i ++)
@@ -66,10 +70,11 @@ public class DialogueUI : MonoBehaviour
         }
         else
         {
-            if (dialogueObject.giving) {
+            Debug.Log(currDialogue.giving);
+            if (currDialogue.giving) {
 
                 InventoryController inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventoryController>();
-                inventory.addItem(dialogueObject.item);
+                Debug.Log(inventory.addItem(currDialogue.item));
 
             }
             CloseDialogueBox();

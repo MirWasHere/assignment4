@@ -25,3 +25,4 @@ MonoBehaviour:
   dialogueObject: {fileID: 0}
   dontGiveMe: {fileID: 11400000, guid: 08d9775922f27f44cba9a0a5d6a6543b, type: 2}
   characterName: Alchemist
+  characterName2: no one
