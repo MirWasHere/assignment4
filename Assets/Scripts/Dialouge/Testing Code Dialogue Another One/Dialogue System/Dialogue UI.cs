@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Inventory;
+using Inventory.Model;
 
 public class DialogueUI : MonoBehaviour
 {
@@ -64,6 +66,12 @@ public class DialogueUI : MonoBehaviour
         }
         else
         {
+            if (dialogueObject.giving) {
+
+                InventoryController inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventoryController>();
+                inventory.addItem(dialogueObject.item);
+
+            }
             CloseDialogueBox();
             DialogueInteractable.inConversation = false;
         }

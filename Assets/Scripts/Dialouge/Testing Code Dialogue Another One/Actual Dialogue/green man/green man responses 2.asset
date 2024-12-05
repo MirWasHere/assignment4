@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: green man responses 2
   m_EditorClassIdentifier: 
   sentenceTexts:
-  - sentence: 'Five strawberries for 10 jars of strawberry jolly ranchers???? '
+  - sentence: The very ESSENSE OF LIFE???? How have I never heard of such wonders??!!!
     charName: green man
     charSprite: {fileID: -1955620519, guid: 3febb40a5fa33c04da06f4a0cdf3db99, type: 3}
   - sentence: WHAT A STEAL!! HOW KIND YOU ARE FINE SIR!!! YOUR KINDNESS WILL NOT
@@ -22,3 +22,5 @@ MonoBehaviour:
     charSprite: {fileID: -1193564661, guid: 2c78db80d0f5abb48bb9c6e6207208ea, type: 3}
   responses: []
   givable: 0
+  giving: 0
+  item: {fileID: 0}

@@ -15,7 +15,7 @@ MonoBehaviour:
   <IsStackable>k__BackingField: 1
   <MaxStackSize>k__BackingField: 20
   <Name>k__BackingField: Strawberry
-  <Description>k__BackingField: Arin questions the strawberry-ness of this strawberry,
+  <Description>k__BackingField: Airin questions the strawberry-ness of this strawberry,
     but who is he to doubt his knowledgable neighbor?
   <ItemImage>k__BackingField: {fileID: 21300000, guid: e84e6f82d2ef9904c9e089ef5d2758f0,
     type: 3}
@@ -23,4 +23,4 @@ MonoBehaviour:
     type: 3}
   dialogueObject: {fileID: 11400000, guid: 437e87d7dabc63a44ae5ba8da4694136, type: 2}
   dontGiveMe: {fileID: 11400000, guid: 3c343974cbac9a1438a1f35e31277514, type: 2}
-  dialogueUI: {fileID: 0}
+  characterName: fish

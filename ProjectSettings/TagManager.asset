@@ -12,6 +12,7 @@ TagManager:
   - MayorDoor
   - Trigger
   - Canvas
+  - Item
   layers:
   - Default
   - TransparentFX

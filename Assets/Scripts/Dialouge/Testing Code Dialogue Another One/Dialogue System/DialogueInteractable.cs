@@ -82,7 +82,7 @@ public class DialogueInteractable : MonoBehaviour
         // don't let the character give anything + make the character say:
         // "DONT GIVE ME ANYTHING"
         else if(dialogueUI.currDialogue != null && !dialogueUI.currDialogue.givable 
-            && !name.Equals(dialogueUI.currDialogue.sentenceTexts[0].CharName))
+            && (!name.Equals(dialogueUI.currDialogue.sentenceTexts[0].CharName) && !dialogueUI.currDialogue.sentenceTexts[0].CharName.Equals("Alchemist")))
         {
             // make the character sprite = to character of previously running dialogue
             dontGive.sentenceTexts[0].setCharSprite(dialogueUI.currDialogue.sentenceTexts[0].CharSprite);

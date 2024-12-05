@@ -15,9 +15,13 @@ MonoBehaviour:
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
   <Name>k__BackingField: Non-Crystalline Transparent Solid
-  <Description>k__BackingField: 
-  <ItemImage>k__BackingField: {fileID: 21300000, guid: 9eaeb93368e742948baf8dfe66b8ed43,
+  <Description>k__BackingField: The jar is sticky, warm, and smells faintly of nostalgic
+    cherry jolly ranchers. Airin's very tempted to take a little lick. Airin does
+    lament that his pockets will very sticky now.
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: 52af4c4c2eb46fd4595e945f93bce280,
     type: 3}
-  <actionSFX>k__BackingField: {fileID: 0}
+  <actionSFX>k__BackingField: {fileID: 8300000, guid: 1e4d438f9d286304b918672a47cba77f,
+    type: 3}
   dialogueObject: {fileID: 0}
   dontGiveMe: {fileID: 0}
+  characterName: Raccoon

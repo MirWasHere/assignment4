@@ -36,6 +36,16 @@ namespace Inventory
             }
         }
 
+        public bool addItem(ItemSO item) {
+
+            if (item != null)
+                return false;
+            
+            inventoryData.AddItem(item, 1);
+            return true;
+
+        }
+
         private void UpdateInventoryUI(Dictionary<int, InventoryItem> inventoryState)
         {
             inventoryUI.ResetAllItems();
@@ -55,6 +65,7 @@ namespace Inventory
 
         private void HandleDescriptionRequest(int itemIndex)
         {
+            Debug.Log("YOU CLICKED");
             InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
             if (inventoryItem.IsEmpty)
             {

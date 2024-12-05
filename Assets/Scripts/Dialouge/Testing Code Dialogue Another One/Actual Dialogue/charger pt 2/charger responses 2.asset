@@ -25,3 +25,5 @@ MonoBehaviour:
     charSprite: {fileID: 1797523761, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
   responses: []
   givable: 0
+  giving: 1
+  item: {fileID: 0}

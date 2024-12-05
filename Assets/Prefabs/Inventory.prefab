@@ -1040,6 +1040,7 @@ MonoBehaviour:
   contentPanel: {fileID: 3435627573201155193}
   itemDescription: {fileID: 1893755514227153674}
   items: []
+  actionPanel: {fileID: 0}
 --- !u!1 &7360987717928580567
 GameObject:
   m_ObjectHideFlags: 0
