@@ -19,14 +19,14 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI countText;
     private int count;
     private bool won;
-    private bool winTwice;
-    private bool wonThrice;
+    public static bool sceneOut;
 
     void Start()
     {
         rb = GetComponent <Rigidbody>();
         count = 0;
         won = false;
+        sceneOut = false;
     }
 
     void Update()
@@ -92,6 +92,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log(SceneManager.GetActiveScene().name);
                 SceneManager.LoadScene("forestAndTown");
                 transform.position = new Vector3(-350.59f, 2.71f, 32.92f);
+                sceneOut = true;
                 
           }
           else if (other.gameObject.CompareTag("Collectible")) 
@@ -124,7 +125,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log(SceneManager.GetActiveScene().name);
             SceneManager.LoadScene("forestAndTown");
 
-            transform.position = new Vector3(-185f, 12f, 34.68f);
+            transform.position = new Vector3(126.14f, 18.36f, -81.21f);
         }
         else
         {

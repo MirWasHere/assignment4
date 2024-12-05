@@ -23,6 +23,12 @@ public class CameraController : MonoBehaviour
     {
 
         transform.position = player.transform.position + offset;
+        if(PlayerController.sceneOut)
+        {
+            Debug.Log(PlayerController.sceneOut);
+            transform.position = new Vector3 (-356f, 4.71f, 32.92f);
+            PlayerController.sceneOut = false;
+        }
         
     }
 }
