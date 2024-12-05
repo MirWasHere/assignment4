@@ -424,8 +424,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2191,7 +2191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 91824693}
-  dialogueObject: {fileID: 0}
+  dialogueObject: {fileID: 11400000, guid: 3f3f4dca5582841faa75c458f99dad43, type: 2}
   dialogueUI: {fileID: 1904333530}
 --- !u!65 &37951099
 BoxCollider:
@@ -37054,8 +37054,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cd4294b4190ad24a854d242198ac1d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 0}
-  dialogueObject: {fileID: 0}
+  visualCue: {fileID: 1620166451}
+  dialogueObject: {fileID: 11400000, guid: 709af19906ba048109a017d7123aaa42, type: 2}
   dialogueUI: {fileID: 1904333530}
 --- !u!65 &765579240
 BoxCollider:
@@ -39483,7 +39483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 315353648}
-  dialogueObject: {fileID: 0}
+  dialogueObject: {fileID: 11400000, guid: 095908fd288184f229f4b34f17588239, type: 2}
   dialogueUI: {fileID: 1904333530}
 --- !u!65 &825676142
 BoxCollider:
@@ -45055,7 +45055,7 @@ RectTransform:
   m_GameObject: {fileID: 937109057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 873547360}
@@ -61291,7 +61291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1545712089}
-  dialogueObject: {fileID: 0}
+  dialogueObject: {fileID: 11400000, guid: e3ea419fa21384f2d8cf6cfe1c2a7c27, type: 2}
   dialogueUI: {fileID: 1904333530}
 --- !u!65 &1219419005
 BoxCollider:
@@ -76802,7 +76802,7 @@ GameObject:
   - component: {fileID: 1543037431}
   - component: {fileID: 1543037432}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Door Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76817,7 +76817,7 @@ Transform:
   m_GameObject: {fileID: 1543037430}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.44, y: 0.54, z: 13.93}
+  m_LocalPosition: {x: -7.24, y: 0.54, z: 13.929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76838,7 +76838,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -106019,7 +106019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2064524635}
   m_Layer: 0
-  m_Name: Market Stall 5
+  m_Name: Charger Stall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106623,8 +106623,8 @@ Transform:
   m_GameObject: {fileID: 2081231581}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.51, y: 0.29, z: -56.95}
-  m_LocalScale: {x: 5.87544, y: 2.3387582, z: 2.6124341}
+  m_LocalPosition: {x: -7.51, y: 0.29, z: -56.18}
+  m_LocalScale: {x: 7.7144527, y: 2.3387582, z: 3.1030495}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1167628922}
@@ -106642,7 +106642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 530472072}
-  dialogueObject: {fileID: 0}
+  dialogueObject: {fileID: 11400000, guid: 6f0b0d0753deb49a9af942806bbd0f6e, type: 2}
   dialogueUI: {fileID: 1904333530}
 --- !u!65 &2081231584
 BoxCollider:
