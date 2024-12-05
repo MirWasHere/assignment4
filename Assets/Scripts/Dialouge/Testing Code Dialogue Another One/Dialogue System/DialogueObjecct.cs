@@ -13,13 +13,11 @@ public class DialogueObjecct : ScriptableObject
 
     [SerializeField] private Response[] responses;
 
-<<<<<<< Updated upstream
-    [SerializeField] public SecondaryDialogue[] secondaryDialogue;
-=======
+    [SerializeField] public DialogueObjecct secondaryDialogue;
+
     [SerializeField] public bool finalDialogueInTown = false;
 
     [SerializeField] public bool finalDialogueCompletely = false;
->>>>>>> Stashed changes
 
     [SerializeField] public bool givable = false;
 
@@ -33,12 +31,14 @@ public class DialogueObjecct : ScriptableObject
 
     public SentenceText[] SentenceTexts => sentenceTexts;
 
-    public SecondaryDialogue[] SecondaryDialogues => secondaryDialogue;
+    public DialogueObjecct SecondaryDialogues => secondaryDialogue;
 
     public bool HasResponses => Responses != null && Responses.Length > 0;
 
+
     public Response[] Responses => responses;
 
-
+    // Number of times dialogue has been read
     public int readTimes = 0;
+
 }

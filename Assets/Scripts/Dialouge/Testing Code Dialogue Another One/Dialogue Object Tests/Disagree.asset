@@ -23,3 +23,14 @@ MonoBehaviour:
     charName: Jim
     charSprite: {fileID: 21300000, guid: 50180e1ada4ffc54385e28d8e7a7e765, type: 3}
   responses: []
+  secondaryDialogue:
+  - sentence: What? I'm not gonna ask the same thing twice....
+    charName: Jim
+    charSprite: {fileID: 0}
+  finalDialogueInTown: 0
+  finalDialogueCompletely: 0
+  givable: 0
+  giving: 0
+  giveNum: 0
+  item: {fileID: 0}
+  readTimes: 0

@@ -14,19 +14,14 @@ public class DialogueInteractable : MonoBehaviour
     private bool playerInRange;
     public static bool inConversation;
 
-    public static string objectTag;
-    // Add animator if time
+    public string objectTag;
 
-    // private void Start(){
-    //     dialogueObject = new DialogueObjecct[10];
-    // }
 
     private void Awake()
     {
         playerInRange = false;
         inConversation = false;
         visualCue.SetActive(false);
-        objectTag = visualCue.tag;
         dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
     }
 
@@ -108,4 +103,11 @@ public class DialogueInteractable : MonoBehaviour
         dialogueUI.ShowDialogue(dialogueObject);
         return true;
     }
+
+
+    public string getItemTag()
+    {
+        return objectTag;
+    }
+
 }

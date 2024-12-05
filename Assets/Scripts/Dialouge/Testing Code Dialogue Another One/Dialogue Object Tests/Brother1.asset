@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
-  m_Name: New Dialogue Objecct
+  m_Name: Brother1
   m_EditorClassIdentifier: 
   sentenceTexts:
   - sentence: Hey, so you've met my brother, huh?

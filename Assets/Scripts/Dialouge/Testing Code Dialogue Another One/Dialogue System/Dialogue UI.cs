@@ -5,7 +5,6 @@ using TMPro;
 using UnityEngine.UI;
 using Inventory;
 using Inventory.Model;
-using UnityEngine.SceneManagement;
 
 public class DialogueUI : MonoBehaviour
 {
@@ -14,18 +13,21 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private Image charSprite;
     [SerializeField] private TMP_Text textLabel;
     [SerializeField] private TMP_Text nameText;
-
-    [SerializeField] private DialogueObjecct finalDialogue;
     
     public DialogueObjecct currDialogue = null;
 
     private ResponseHandler responseHandler;
     
     private TypeWritterEffect typeWritterEffect;
+    private bool secondary;
+
+    //private DialogueInteractable dialogueInteractable;
 
     private void Start()
     {
+        secondary = false;
         typeWritterEffect = GetComponent<TypeWritterEffect>();
+       // dialogueInteractable = GetComponent<DialogueInteractable>();
         responseHandler = GetComponent<ResponseHandler>();
         CloseDialogueBox();
         
@@ -35,6 +37,7 @@ public class DialogueUI : MonoBehaviour
     {
         currDialogue = dialogueObject;
         dialogueBox.SetActive(true);
+        //dialogueObject.readTimes += 1;
         StartCoroutine(StepThroughDialogue(dialogueObject));
     }
 
@@ -44,75 +47,41 @@ public class DialogueUI : MonoBehaviour
 
     private  IEnumerator StepThroughDialogue(DialogueObjecct dialogueObject)
     {
-        dialogueObject.readTimes ++;
-        Debug.Log(DialogueInteractable.objectTag);
-
-        // if(dialogueObject.readTimes == 2 && DialogueInteractable.objectTag == "Sign")
-        // {
-        //     for( int i = 0; i < dialogueObject.SecondaryDialogues.Length; i ++)
-        //         {
-        //             //string dialogue = dialogueObject.Dialogue[i];
-        //             string dialogue = dialogueObject.SecondaryDialogues[i].Sentences;
-        //             nameText.text = dialogueObject.SecondaryDialogues[i].CharName;
-
-        //             if(dialogueObject.SecondaryDialogues[i].CharSprite == null)
-        //             {
-        //                 charSprite.color = new Color(0, 0, 0, 0);
-        //             }
-        //             else
-        //             {
-        //                 charSprite.sprite = dialogueObject.SecondaryDialogues[i].CharSprite;
-        //                 charSprite.color = Color.white;
-        //             }
-                    
-        //             yield return typeWritterEffect.Run(dialogue, textLabel);
-
-        //             if(i == dialogueObject.SecondaryDialogues.Length - 1 && dialogueObject.HasResponses) break;
-
-
-        //             yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
-        //     }
-        // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        for( int i = 0; i < dialogueObject.SentenceTexts.Length; i ++)
+        if(/*dialogueObject.SecondaryDialogues.Length > 0 &&*/ dialogueObject.readTimes >= 1)
         {
-            //string dialogue = dialogueObject.Dialogue[i];
-            string dialogue = dialogueObject.SentenceTexts[i].Sentences;
-            nameText.text = dialogueObject.SentenceTexts[i].CharName;
-
-            if(dialogueObject.SentenceTexts[i].CharSprite == null)
-            {
-                charSprite.color = new Color(0, 0, 0, 0);
-            }
-            else
-            {
-                charSprite.sprite = dialogueObject.SentenceTexts[i].CharSprite;
-                charSprite.color = Color.white;
-            }
+            if (dialogueObject.secondaryDialogue != null)
+                ShowDialogue(dialogueObject.secondaryDialogue);
             
-            yield return typeWritterEffect.Run(dialogue, textLabel);
+            CloseDialogueBox();
+        }
+        else
+        {
+            for( int i = 0; i < dialogueObject.SentenceTexts.Length; i ++)
+            {
+                //string dialogue = dialogueObject.Dialogue[i];
+                string dialogue = dialogueObject.SentenceTexts[i].Sentences;
+                nameText.text = dialogueObject.SentenceTexts[i].CharName;
 
-            if(i == dialogueObject.SentenceTexts.Length - 1 && dialogueObject.HasResponses) break;
+                if(dialogueObject.SentenceTexts[i].CharSprite == null)
+                {
+                    charSprite.color = new Color(0, 0, 0, 0);
+                }
+                else
+                {
+                    charSprite.sprite = dialogueObject.SentenceTexts[i].CharSprite;
+                    charSprite.color = Color.white;
+                }
+                
+                yield return typeWritterEffect.Run(dialogue, textLabel);
+
+                if(i == dialogueObject.SentenceTexts.Length - 1 && dialogueObject.HasResponses) break;
 
 
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+                
+            }
+            if (dialogueObject.secondaryDialogue != null)
+                dialogueObject.readTimes = 1;
         }
         if(dialogueObject.HasResponses)
         {
@@ -128,20 +97,11 @@ public class DialogueUI : MonoBehaviour
 
             }
             CloseDialogueBox();
+            
             DialogueInteractable.inConversation = false;
             
-            if (dialogueObject.finalDialogueInTown) {
-                Debug.Log(SceneManager.GetActiveScene().name);
-                SceneManager.LoadScene("Final");
-
-                transform.position = new Vector3(3f, 3.0f, 3f);
-                ShowDialogue(finalDialogue);
-            }
-
-            if (dialogueObject.finalDialogueCompletely) {
-                GameObject.FindGameObjectWithTag("CanvasFinal").SetActive(true);
-            }
         }
+        
         Debug.Log(dialogueObject.readTimes);
     }
 
@@ -150,7 +110,9 @@ public class DialogueUI : MonoBehaviour
         currDialogue = null;
         dialogueBox.SetActive(false);
         textLabel.text = "";
+        
 
     }
+
 
 }
