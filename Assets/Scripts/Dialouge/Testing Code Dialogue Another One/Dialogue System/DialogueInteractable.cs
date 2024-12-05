@@ -24,6 +24,8 @@ public class DialogueInteractable : MonoBehaviour
         playerInRange = false;
         inConversation = false;
         visualCue.SetActive(false);
+
+        dialogueUI = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogueUI>();
     }
 
     private void Update()

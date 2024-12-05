@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
 
     private Vector3 offset;
     
@@ -17,6 +17,7 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         tracker = 0;
         offset = transform.position - player.transform.position;
     }
