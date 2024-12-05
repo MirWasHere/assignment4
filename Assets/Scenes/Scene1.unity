@@ -4064,6 +4064,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 629295122}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &637059199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 637059200}
+  m_Layer: 5
+  m_Name: forCanvasTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &637059200
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637059199}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 721793093}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &662522612 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 607fa0a0a8b6097479348b4480edc606,
@@ -4578,6 +4613,7 @@ RectTransform:
   - {fileID: 1506778638}
   - {fileID: 213478048}
   - {fileID: 881587080}
+  - {fileID: 637059200}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4973,7 +5009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37a22d4f347d01d42b30134f38152b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  birbAnim: {fileID: 0}
+  birbAnim: {fileID: 764849210}
 --- !u!1001 &776355671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5558,7 +5594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cd4294b4190ad24a854d242198ac1d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 0}
+  visualCue: {fileID: 637059199}
   dialogueObject: {fileID: 0}
   dialogueUI: {fileID: 721793094}
 --- !u!4 &881587080
@@ -12126,10 +12162,10 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 961739753}
   - {fileID: 203844589}
   - {fileID: 1138486419}
   - {fileID: 449669294}
+  - {fileID: 961739753}
   - {fileID: 117675433}
   - {fileID: 1580663440}
   - {fileID: 1193861197}
