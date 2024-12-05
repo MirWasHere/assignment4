@@ -46,6 +46,10 @@ public class PlayerController : MonoBehaviour
                 speed /= 2;
             }
         }
+        if(SceneManager.GetActiveScene().name == "Alchemy Lab")
+        {
+           transform.localScale += new Vector3(1, 0, 1);
+        }
     }
 
 
@@ -64,6 +68,13 @@ public class PlayerController : MonoBehaviour
                 Debug.Log(SceneManager.GetActiveScene().name);
                 SceneManager.LoadScene("Scene3");
                 transform.position = new Vector3(8.95f, 11.0f, -10f);
+                
+          }
+          else if (other.gameObject.CompareTag("MayorDoor")) 
+           {
+                Debug.Log(SceneManager.GetActiveScene().name);
+                SceneManager.LoadScene("Alchemy Lab");
+                transform.position = new Vector3(0.68f, 3.81469f, -10f);
                 
           }
           else if (other.gameObject.CompareTag("Collectible")) 
