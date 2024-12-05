@@ -18,5 +18,6 @@ MonoBehaviour:
   <Description>k__BackingField: 
   <ItemImage>k__BackingField: {fileID: 0}
   <actionSFX>k__BackingField: {fileID: 0}
-  dialogueObject: {fileID: 0}
-  dontGiveMe: {fileID: 0}
+  dialogueObject: {fileID: 11400000, guid: 01d99a5e7a775864fbbeb51ea99c58cf, type: 2}
+  dontGiveMe: {fileID: 11400000, guid: 08d9775922f27f44cba9a0a5d6a6543b, type: 2}
+  characterName: frog

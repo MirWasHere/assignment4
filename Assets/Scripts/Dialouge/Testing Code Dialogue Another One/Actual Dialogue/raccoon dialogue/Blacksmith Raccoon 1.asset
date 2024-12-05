@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Blacksmith Raccoon 1
   m_EditorClassIdentifier: 
   sentenceTexts:
-  - sentence: what do you want.
-    charName: 'raccoon '
-    charSprite: {fileID: 0}
+  - sentence: What do you want.
+    charName: Raccoon
+    charSprite: {fileID: -1188650431, guid: ab535c14fa8cb964291cd852de5cfd8c, type: 3}
   responses:
   - responseText: ...(motion for ax)
     dialogueObject: {fileID: 11400000, guid: 9632dde1f97fb40fdaeca9026180bae9, type: 2}

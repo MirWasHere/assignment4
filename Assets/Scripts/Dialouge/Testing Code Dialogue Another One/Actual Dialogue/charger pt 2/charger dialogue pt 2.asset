@@ -16,13 +16,8 @@ MonoBehaviour:
   - sentence: "You\u2019re back. Did you bring something of value? Or did you just
       bring your disappointing self."
     charName: charger
-    charSprite: {fileID: 0}
+    charSprite: {fileID: -418621257, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
   responses:
-  - responseText: ...(holds out mucus jar)
-    dialogueObject: {fileID: 11400000, guid: 8ea82d9cb330045ddb04290c913f9e62, type: 2}
-  - responseText: mucus.
-    dialogueObject: {fileID: 11400000, guid: 8ea82d9cb330045ddb04290c913f9e62, type: 2}
-  - responseText: "I\u2019ve brought some of the frog\u2019s mucus, is it enough
-      to trade for the lifeline string?"
-    dialogueObject: {fileID: 11400000, guid: 8ea82d9cb330045ddb04290c913f9e62, type: 2}
-  givable: 0
+  - responseText: No...
+    dialogueObject: {fileID: 11400000, guid: 0e2751ac9a6940d49b25cb09b89acf41, type: 2}
+  givable: 1

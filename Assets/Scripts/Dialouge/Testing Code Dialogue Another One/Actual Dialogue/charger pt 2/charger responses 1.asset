@@ -15,11 +15,11 @@ MonoBehaviour:
   sentenceTexts:
   - sentence: Oh my goodness!! YOU GOT HIS SLIME???
     charName: charger
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 225147299, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
   - sentence: "I\u2019ve never been able to get my hands on it because he\u2019s
       so angry all the time\u2026I\u2019ll take this"
     charName: charger
-    charSprite: {fileID: 0}
+    charSprite: {fileID: -1368176557, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
   responses:
   - responseText: ...
     dialogueObject: {fileID: 11400000, guid: 79d07809a294a445bb738a07f9899d51, type: 2}

@@ -15,11 +15,11 @@ MonoBehaviour:
   sentenceTexts:
   - sentence: "Oh woe is me! A customer has arrived and I have NOTHING of value\u2026"
     charName: green man
-    charSprite: {fileID: 0}
+    charSprite: {fileID: -1177923928, guid: 3febb40a5fa33c04da06f4a0cdf3db99, type: 3}
   - sentence: "you will hate me and curse me won\u2019t you?? PLEASE FORGIVE THIS
       MERE MORTAL"
     charName: green man
-    charSprite: {fileID: 0}
+    charSprite: {fileID: -332543233, guid: 2c78db80d0f5abb48bb9c6e6207208ea, type: 3}
   responses:
   - responseText: ...(points to paper)
     dialogueObject: {fileID: 11400000, guid: d52c9323a00d4441888d33c84fc362b0, type: 2}

@@ -15,12 +15,12 @@ MonoBehaviour:
   sentenceTexts:
   - sentence: Then what are you still doing here?
     charName: charger
-    charSprite: {fileID: 0}
+    charSprite: {fileID: -418621257, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
   - sentence: Scram!
     charName: charger
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 225147299, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
   - sentence: ...
     charName: Arin
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 1607587547, guid: 47651bf3e3e10c14989124001dec53a5, type: 3}
   responses: []
   givable: 0

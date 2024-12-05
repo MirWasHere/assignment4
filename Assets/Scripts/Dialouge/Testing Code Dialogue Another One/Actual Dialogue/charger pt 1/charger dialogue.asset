@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: charger dialogue
   m_EditorClassIdentifier: 
   sentenceTexts:
-  - sentence: 
-    charName: 
-    charSprite: {fileID: 0}
+  - sentence: Ugh, what do YOU want?
+    charName: charger
+    charSprite: {fileID: -418621257, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
   responses:
   - responseText: ...
     dialogueObject: {fileID: 11400000, guid: f39a77aaa83c7446b96aa8348d5fdf3b, type: 2}
