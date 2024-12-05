@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log(SceneManager.GetActiveScene().name);
             SceneManager.LoadScene("forestAndTown");
 
-            transform.position = new Vector3(122f, 15f, -82f);
+            transform.position = new Vector3(-185f, 12f, 34.68f);
         }
         else
         {
@@ -106,3 +106,5 @@ public class PlayerController : MonoBehaviour
 
     }
 }
+
+// 122f, 15f, -82f
