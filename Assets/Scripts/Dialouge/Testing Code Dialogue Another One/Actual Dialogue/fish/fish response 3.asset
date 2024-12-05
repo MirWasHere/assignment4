@@ -16,6 +16,6 @@ MonoBehaviour:
   - sentence: "Strawberries\u2026red like blood but sprout green like life was meant
       to\u2026"
     charName: fish
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 312739241, guid: 33af24618a3978a40829eb9a5233a586, type: 3}
   responses: []
   givable: 0

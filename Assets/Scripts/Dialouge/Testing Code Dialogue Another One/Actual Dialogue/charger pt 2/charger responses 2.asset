@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceTexts:
   - sentence: 'Oh whatever, mucus, slime. Point is, I HAVE SOME NOW! '
-    charName: 
-    charSprite: {fileID: 0}
+    charName: charger
+    charSprite: {fileID: -1176722042, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
   - sentence: Here take the lifeline string and go!
-    charName: 
-    charSprite: {fileID: 0}
+    charName: charger
+    charSprite: {fileID: 225147299, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
   - sentence: "You\u2019ve actually done something useful for once in your life,
       don\u2019t ruin it by just standing there. "
-    charName: 
-    charSprite: {fileID: 0}
+    charName: charger
+    charSprite: {fileID: 1797523761, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
   responses: []
   givable: 0

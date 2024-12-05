@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: Meeting the Alchemist_1
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: '-and then you put it there... '
+    charName: Alchemist
+    charSprite: {fileID: 468929849, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
+  - sentence: AH! Oh my goodnss, my poor hear... where did you come from? WHEN did
+      you come? WHO ARE YOU?!
+    charName: Alchemist
+    charSprite: {fileID: -1297625263, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 11400000, guid: 119394f0c7464c74b9743c0056cae3ba, type: 2}
+  - responseText: door.
+    dialogueObject: {fileID: 11400000, guid: a09377d6a1b1f3e4a810b46449690e1e, type: 2}
+  - responseText: I need your help
+    dialogueObject: {fileID: 11400000, guid: ac952bbb1cdc33646851dbba87336d36, type: 2}
+  givable: 0

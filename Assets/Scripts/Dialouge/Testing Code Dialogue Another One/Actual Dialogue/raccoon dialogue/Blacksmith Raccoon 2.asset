@@ -15,17 +15,14 @@ MonoBehaviour:
   sentenceTexts:
   - sentence: Forgery is a mighty expensive thing to ask for, especially a little
       guy like you.
-    charName: Racoon
-    charSprite: {fileID: 0}
+    charName: Raccoon
+    charSprite: {fileID: -844932969, guid: d33fecfe869755c4d95826b1b91c76ee, type: 3}
   - sentence: What do you have to offer?
-    charName: Racoon
-    charSprite: {fileID: 0}
+    charName: Raccoon
+    charSprite: {fileID: 1349090997, guid: d33fecfe869755c4d95826b1b91c76ee, type: 3}
   responses:
-  - responseText: ...(holds out jar of jolly ranchers)
-    dialogueObject: {fileID: 11400000, guid: 139533c32767e4a61b76ed5334e36fec, type: 2}
-  - responseText: jolly ranchers.
-    dialogueObject: {fileID: 11400000, guid: 139533c32767e4a61b76ed5334e36fec, type: 2}
-  - responseText: "It\u2019s not much but I have a jolly ranchers? I\u2019m sorry
-      it\u2019s all I have but I really want to go home"
-    dialogueObject: {fileID: 11400000, guid: 139533c32767e4a61b76ed5334e36fec, type: 2}
-  givable: 0
+  - responseText: ...
+    dialogueObject: {fileID: 11400000, guid: d213da5afd218e2489d33d30bd55172b, type: 2}
+  - responseText: nothin sir, could I have it for free?
+    dialogueObject: {fileID: 11400000, guid: d213da5afd218e2489d33d30bd55172b, type: 2}
+  givable: 1

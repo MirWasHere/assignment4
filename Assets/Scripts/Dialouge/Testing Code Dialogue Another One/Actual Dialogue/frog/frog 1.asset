@@ -15,18 +15,18 @@ MonoBehaviour:
   sentenceTexts:
   - sentence: WHAT DO YOU WANT.
     charName: frog
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 1863642132, guid: 3c6dbcdca73d8054f83d6cb7bd88da8b, type: 3}
   - sentence: "Oh right, let\u2019s just sit here and think because we have ALLLLLL
       the time in the world!"
     charName: frog
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 1598554379, guid: 3c6dbcdca73d8054f83d6cb7bd88da8b, type: 3}
   - sentence: "NO. YOU COME KNOWING WHAT YOU WANT. I DON\u2019T HAVE TIME FOR THIS."
     charName: frog
     charSprite: {fileID: 0}
   - sentence: YOU HAVE FIVE SECONDS TO TELL ME WHAT YOU WANT BEFORE I THROW YOU ACROSS
       THE FOREST. FIVE, FOUR, THREE-
     charName: frog
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 1468407107, guid: 3c6dbcdca73d8054f83d6cb7bd88da8b, type: 3}
   responses:
   - responseText: "...(while pointing to the mucus coming off the frog\u2019s body)"
     dialogueObject: {fileID: 11400000, guid: 3e66ac657d82a4248b68fb373dc53f6f, type: 2}

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: Mayor Intro
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: "Well hello there! I don\u2019t recognize ya, you must be new! What
+      brings you here?"
+    charName: Mayor
+    charSprite: {fileID: -1191195536, guid: 9bbb1ad2f57f7824d9d1785179e5d5ac, type: 3}
+  responses:
+  - responseText: I'm not sure
+    dialogueObject: {fileID: 11400000, guid: 225a4dc773d46cc42b6de998c89cbe3a, type: 2}
+  - responseText: . . .
+    dialogueObject: {fileID: 11400000, guid: 3e67b08f3f6455a4d867504403bc6b80, type: 2}
+  - responseText: strawberry
+    dialogueObject: {fileID: 11400000, guid: ff4971da14e64a34797910e82df64a03, type: 2}
+  givable: 0

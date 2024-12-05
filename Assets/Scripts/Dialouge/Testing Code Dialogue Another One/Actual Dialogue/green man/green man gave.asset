@@ -15,7 +15,7 @@ MonoBehaviour:
   sentenceTexts:
   - sentence: ...
     charName: Arin
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 1607587547, guid: 47651bf3e3e10c14989124001dec53a5, type: 3}
   responses:
   - responseText: ...
     dialogueObject: {fileID: 11400000, guid: 0897ae6c0cc4f43c190e3a5b2076f950, type: 2}

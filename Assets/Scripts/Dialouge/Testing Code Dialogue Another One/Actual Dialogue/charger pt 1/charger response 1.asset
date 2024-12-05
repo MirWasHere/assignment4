@@ -15,12 +15,12 @@ MonoBehaviour:
   sentenceTexts:
   - sentence: YOU expect ME to give YOU a lifeline string for a STRAWBERRY?
     charName: charger
-    charSprite: {fileID: 0}
+    charSprite: {fileID: -1176722042, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
   - sentence: "Maybe the Mad scientist isn\u2019t the ONLY crazy one in this town."
     charName: charger
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 1797523761, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
   - sentence: leave. Your existence disappoints me.
     charName: charger
-    charSprite: {fileID: 0}
+    charSprite: {fileID: -1368176557, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
   responses: []
   givable: 0

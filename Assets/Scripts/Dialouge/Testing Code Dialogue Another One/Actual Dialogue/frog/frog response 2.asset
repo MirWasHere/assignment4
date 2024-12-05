@@ -16,10 +16,10 @@ MonoBehaviour:
   - sentence: "an ax\u2026hmm that could be useful when someone get PARTICULARLY
       frustrating\u2026"
     charName: frog
-    charSprite: {fileID: 0}
+    charSprite: {fileID: -1421511617, guid: 3c6dbcdca73d8054f83d6cb7bd88da8b, type: 3}
   - sentence: "alright it\u2019s a deal! Here, now, GO BEFORE I CHASE YOU WITH THIS
       AX!!"
     charName: frog
-    charSprite: {fileID: 0}
+    charSprite: {fileID: -2049193499, guid: 3c6dbcdca73d8054f83d6cb7bd88da8b, type: 3}
   responses: []
   givable: 0

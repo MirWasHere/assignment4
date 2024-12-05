@@ -15,13 +15,13 @@ MonoBehaviour:
   sentenceTexts:
   - sentence: ...
     charName: Arin
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 1607587547, guid: 47651bf3e3e10c14989124001dec53a5, type: 3}
   responses:
   - responseText: ...(holds out jar of jolly ranchers)
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000, guid: 139533c32767e4a61b76ed5334e36fec, type: 2}
   - responseText: jolly ranchers.
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000, guid: 139533c32767e4a61b76ed5334e36fec, type: 2}
   - responseText: "It\u2019s not much but I have a jolly ranchers? I\u2019m sorry
       it\u2019s all I have but I really want to go home"
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000, guid: 139533c32767e4a61b76ed5334e36fec, type: 2}
   givable: 0
