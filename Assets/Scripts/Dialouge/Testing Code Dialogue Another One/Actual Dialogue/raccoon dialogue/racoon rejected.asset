@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: racoon rejected
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: Sorry kiddo, but I can't be givin' things out for free.
+    charName: Raccoon
+    charSprite: {fileID: -1188650431, guid: ab535c14fa8cb964291cd852de5cfd8c, type: 3}
+  - sentence: Just ain't a good business model.
+    charName: Raccoon
+    charSprite: {fileID: 881775277, guid: ab535c14fa8cb964291cd852de5cfd8c, type: 3}
+  responses: []
+  givable: 0

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: charger dialogue
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: Ugh, what do YOU want?
+    charName: charger
+    charSprite: {fileID: -418621257, guid: c6d08b25955ec744a9f8856c0533f47c, type: 3}
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 11400000, guid: f39a77aaa83c7446b96aa8348d5fdf3b, type: 2}
+  - responseText: trade.
+    dialogueObject: {fileID: 11400000, guid: f39a77aaa83c7446b96aa8348d5fdf3b, type: 2}
+  - responseText: "I\u2019m interested in this lifeline string, trade for a strawberry?"
+    dialogueObject: {fileID: 11400000, guid: f39a77aaa83c7446b96aa8348d5fdf3b, type: 2}
+  secondaryDialogue: {fileID: 11400000, guid: e33b3385b00bd42d2bb756d99a0443ee, type: 2}
+  finalDialogueInTown: 0
+  finalDialogueCompletely: 0
+  givable: 0
+  giving: 0
+  giveNum: 0
+  item: {fileID: 0}
+  readTimes: 0

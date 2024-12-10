@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: Knock, knock!
+    charName: Jerry
+    charSprite: {fileID: -1963678898, guid: 5987646f2fc694540a9c29b34a9d0030, type: 3}
+  - sentence: '*sigh* who''s there...?'
+    charName: Joe
+    charSprite: {fileID: 1593836664, guid: ffa0f239512444c4aa42b36d96cee6d3, type: 3}
+  - sentence: Nobel.
+    charName: Jerry
+    charSprite: {fileID: -1963678898, guid: 5987646f2fc694540a9c29b34a9d0030, type: 3}
+  - sentence: Nobel who.
+    charName: Joe
+    charSprite: {fileID: 1593836664, guid: ffa0f239512444c4aa42b36d96cee6d3, type: 3}
+  - sentence: Nobel, that's why I knocked!!
+    charName: Jerry
+    charSprite: {fileID: -343854207, guid: 242126f61863d2a41a53cab0bc717d31, type: 3}
+  - sentence: . . .
+    charName: 
+    charSprite: {fileID: 0}
+  responses:
+  - responseText: Laugh
+    dialogueObject: {fileID: 11400000, guid: cfc2babdf7034eb4182fe4824bf4f15c, type: 2}
+  - responseText: Hit
+    dialogueObject: {fileID: 11400000, guid: 3c343974cbac9a1438a1f35e31277514, type: 2}
+  - responseText: Stare
+    dialogueObject: {fileID: 11400000, guid: 47f16ce3b7545ae4f979c8e5df01f4ba, type: 2}

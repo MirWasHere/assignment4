@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: fish response 1
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: "Essence of life\u2026do I have any?"
+    charName: fish
+    charSprite: {fileID: 1928297859, guid: 33af24618a3978a40829eb9a5233a586, type: 3}
+  - sentence: Well of course I do, it was my home! A forever betrayal!
+    charName: fish
+    charSprite: {fileID: 1894541171, guid: 33af24618a3978a40829eb9a5233a586, type: 3}
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 11400000, guid: 0351354b351b145e898fe81561f66585, type: 2}
+  - responseText: bag.
+    dialogueObject: {fileID: 11400000, guid: 0351354b351b145e898fe81561f66585, type: 2}
+  - responseText: Well do you at least a bag I could use?
+    dialogueObject: {fileID: 11400000, guid: 0351354b351b145e898fe81561f66585, type: 2}
+  givable: 0

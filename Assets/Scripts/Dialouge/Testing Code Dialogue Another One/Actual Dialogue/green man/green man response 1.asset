@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: green man response 1
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: "Oh my!! It turns out I do!!! I\u2019M NOT A COMPLETE FAILURE AFTER
+      ALL!!! "
+    charName: green man
+    charSprite: {fileID: 1734872230, guid: 3febb40a5fa33c04da06f4a0cdf3db99, type: 3}
+  - sentence: PLEASE, TAKE THEM!!!
+    charName: green man
+    charSprite: {fileID: -1193564661, guid: 2c78db80d0f5abb48bb9c6e6207208ea, type: 3}
+  - sentence: ...
+    charName: Arin
+    charSprite: {fileID: 1607587547, guid: 47651bf3e3e10c14989124001dec53a5, type: 3}
+  - sentence: AHAHAA I GOT YOU! Nooooooo, this is a market! One must trade for such
+      precious sweet nectar!
+    charName: green man
+    charSprite: {fileID: 1734872230, guid: 3febb40a5fa33c04da06f4a0cdf3db99, type: 3}
+  - sentence: Perhaps I may be tempted with something equally as sweet?
+    charName: green man
+    charSprite: {fileID: -1177923928, guid: 3febb40a5fa33c04da06f4a0cdf3db99, type: 3}
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 11400000, guid: 18a30c37fecfd6349bfb795d0eef5046, type: 2}
+  - responseText: I don't got nothing...
+    dialogueObject: {fileID: 11400000, guid: 18a30c37fecfd6349bfb795d0eef5046, type: 2}
+  givable: 1
+  giving: 0
+  item: {fileID: 0}

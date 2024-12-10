@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: No
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: '*SMACK*'
+    charName: 
+    charSprite: {fileID: 0}
+  - sentence: OW!!! What was that for?!?
+    charName: Jerry
+    charSprite: {fileID: 0}
+  - sentence: The dumb joke, dimwit
+    charName: Joe
+    charSprite: {fileID: 1593836664, guid: ffa0f239512444c4aa42b36d96cee6d3, type: 3}
+  - sentence: ...
+    charName: Jerry
+    charSprite: {fileID: 0}
+  - sentence: Wanna hear another...?
+    charName: Jerry
+    charSprite: {fileID: 847297571, guid: 5987646f2fc694540a9c29b34a9d0030, type: 3}
+  - sentence: . . .
+    charName: Joe
+    charSprite: {fileID: 21300000, guid: 6ed5015ab98acf64a88b958e7310ae83, type: 3}
+  responses: []

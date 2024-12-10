@@ -10,6 +10,7 @@ public class DialougeTrigger : MonoBehaviour
     public Dialouge dialouge;
 
 
+
     private bool playerInRange;
     private Animator animator;    
 

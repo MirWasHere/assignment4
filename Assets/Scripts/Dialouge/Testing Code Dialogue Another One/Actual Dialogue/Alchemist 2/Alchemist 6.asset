@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: Alchemist 6
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: It's called mucus.
+    charName: Airin
+    charSprite: {fileID: 1607587547, guid: 47651bf3e3e10c14989124001dec53a5, type: 3}
+  - sentence: "You got everything! To be quite honest I wasn\u2019t sure you were
+      going to be able to\u2026but nonetheless, you did! "
+    charName: Alchemist
+    charSprite: {fileID: 0}
+  - sentence: Now all I have to do is cut up the wood and glue them into a ladder
+      and with the extra wood, I could it make it an ever extending ladder!
+    charName: Alchemist
+    charSprite: {fileID: 0}
+  - sentence: "Then I\u2019ll liquidize the non-crystalline transparent solids and
+      blow them into round bubbles. "
+    charName: Alchemist
+    charSprite: {fileID: 0}
+  - sentence: "Then I\u2019ll fill them with the lifeline string to create a light
+      so you can see on your way up!"
+    charName: Alchemist
+    charSprite: {fileID: 0}
+  responses:
+  - responseText: '...(holds water bag) '
+    dialogueObject: {fileID: 11400000, guid: aa386526d4a48c443ad2b9a9278050ca, type: 2}
+  - responseText: ' water.'
+    dialogueObject: {fileID: 11400000, guid: aa386526d4a48c443ad2b9a9278050ca, type: 2}
+  - responseText: What about the water- sorry essence of life. What are you going
+      to use that for?
+    dialogueObject: {fileID: 11400000, guid: aa386526d4a48c443ad2b9a9278050ca, type: 2}
+  givable: 0
+  giving: 0
+  giveNum: 0
+  item: {fileID: 0}

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: Brother1
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: Hey, so you've met my brother, huh?
+    charName: Jim
+    charSprite: {fileID: 21300000, guid: 50180e1ada4ffc54385e28d8e7a7e765, type: 3}
+  - sentence: Hmph. He's a bit of an oddball, isn't he?
+    charName: Jim
+    charSprite: {fileID: 21300000, guid: 50180e1ada4ffc54385e28d8e7a7e765, type: 3}
+  responses:
+  - responseText: Agree
+    dialogueObject: {fileID: 11400000, guid: a50a2281ca44ed8448d7f9263461d529, type: 2}
+  - responseText: Disagree
+    dialogueObject: {fileID: 11400000, guid: 105d804dac69a4a4b87ea7ebde3fb18c, type: 2}
+  secondaryDialogue: {fileID: 11400000, guid: cfc2babdf7034eb4182fe4824bf4f15c, type: 2}
+  finalDialogueInTown: 0
+  finalDialogueCompletely: 0
+  givable: 0
+  giving: 0
+  giveNum: 0
+  item: {fileID: 0}
+  readTimes: 0

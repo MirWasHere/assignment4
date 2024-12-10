@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: green man rejected
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: 'Nothing! Nada, zilch, canoodle!!!??? '
+    charName: green man
+    charSprite: {fileID: -1955620519, guid: 3febb40a5fa33c04da06f4a0cdf3db99, type: 3}
+  - sentence: WOW, you gotta have it rougher than me! Oh BOOHOO not even a SINGLE
+      TRADE!
+    charName: green man
+    charSprite: {fileID: -1177923928, guid: 3febb40a5fa33c04da06f4a0cdf3db99, type: 3}
+  responses: []
+  givable: 0

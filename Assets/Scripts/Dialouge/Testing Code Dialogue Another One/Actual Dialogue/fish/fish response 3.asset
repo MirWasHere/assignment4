@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: fish response 3
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: "Strawberries\u2026red like blood but sprout green like life was meant
+      to\u2026"
+    charName: fish
+    charSprite: {fileID: 312739241, guid: 33af24618a3978a40829eb9a5233a586, type: 3}
+  responses: []
+  givable: 0
+  giving: 1
+  giveNum: 1
+  item: {fileID: 11400000, guid: e54594d7047c31149829526037c38915, type: 2}

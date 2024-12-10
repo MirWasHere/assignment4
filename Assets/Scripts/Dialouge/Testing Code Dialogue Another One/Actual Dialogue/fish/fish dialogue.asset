@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: fish dialogue
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: Essence of life? Where is the essence indeed?
+    charName: fish
+    charSprite: {fileID: -748611362, guid: 33af24618a3978a40829eb9a5233a586, type: 3}
+  - sentence: ' There is no good in life. There is no reason to smile. The world
+      has no reason to exist yet here we are.'
+    charName: fish
+    charSprite: {fileID: 312739241, guid: 33af24618a3978a40829eb9a5233a586, type: 3}
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 11400000, guid: 9772612b51bbb4b3ca9e38ec74a3999d, type: 2}
+  - responseText: want.
+    dialogueObject: {fileID: 11400000, guid: 9772612b51bbb4b3ca9e38ec74a3999d, type: 2}
+  - responseText: I see you have strong opinions however I am in a rush so do you
+      have any?
+    dialogueObject: {fileID: 11400000, guid: 9772612b51bbb4b3ca9e38ec74a3999d, type: 2}
+  givable: 0

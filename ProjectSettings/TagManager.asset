@@ -9,6 +9,13 @@ TagManager:
   - DialougeBox
   - Continue
   - Collectible
+  - MayorDoor
+  - Trigger
+  - Canvas
+  - Item
+  - Sign
+  - CanvasFinal
+  - MayorDoorExit
   layers:
   - Default
   - TransparentFX

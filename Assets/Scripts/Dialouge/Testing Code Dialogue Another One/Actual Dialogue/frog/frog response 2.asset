@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: frog response 2
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: "an ax\u2026hmm that could be useful when someone get PARTICULARLY
+      frustrating\u2026"
+    charName: frog
+    charSprite: {fileID: -1421511617, guid: 3c6dbcdca73d8054f83d6cb7bd88da8b, type: 3}
+  - sentence: "alright it\u2019s a deal! Here, now, GO BEFORE I CHASE YOU WITH THIS
+      AX!!"
+    charName: frog
+    charSprite: {fileID: -2049193499, guid: 3c6dbcdca73d8054f83d6cb7bd88da8b, type: 3}
+  responses: []
+  givable: 0
+  giving: 1
+  giveNum: 2
+  item: {fileID: 11400000, guid: 02d02268f5f28e44fb10c730debf8008, type: 2}
