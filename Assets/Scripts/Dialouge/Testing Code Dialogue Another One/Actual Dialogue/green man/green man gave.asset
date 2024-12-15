@@ -19,12 +19,17 @@ MonoBehaviour:
   responses:
   - responseText: ...
     dialogueObject: {fileID: 11400000, guid: 0897ae6c0cc4f43c190e3a5b2076f950, type: 2}
-  - responseText: axe.
+  - responseText: strawberry.
     dialogueObject: {fileID: 11400000, guid: 0897ae6c0cc4f43c190e3a5b2076f950, type: 2}
   - responseText: Oh reverent soul, I see that you too have a dramatic heart which
-      much show oneself. I offer you, the war battleaxe forged by a valient soul.
-      It has now retired, won't you give it a proper home?
+      much show oneself. I offer you, STRAWBERRIES! I toiled for hours to pick these
+      strawberries!"
     dialogueObject: {fileID: 11400000, guid: 0897ae6c0cc4f43c190e3a5b2076f950, type: 2}
+  secondaryDialogue: {fileID: 0}
+  finalDialogueInTown: 0
+  finalDialogueCompletely: 0
   givable: 0
   giving: 0
+  giveNum: 0
   item: {fileID: 0}
+  readTimes: 0

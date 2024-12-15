@@ -10,6 +10,7 @@ using Inventory.Model;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 2f;
+    private float originalSpeed;
     [SerializeField] private float turnSpeed = 45f;
     private Rigidbody rb;
 
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent <Rigidbody>();
+        originalSpeed = speed;
         count = 0;
         won = false;
         sceneOut = false;
@@ -69,13 +71,14 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("DoorOpen")) 
            {
                 Debug.Log(SceneManager.GetActiveScene().name);
+                speed = originalSpeed;
                 SceneManager.LoadScene("Scene2");
-
-                 transform.position = new Vector3(3f, 3.0f, 3f);
+                transform.position = new Vector3(3f, 3.0f, 3f);
           }
           else if (other.gameObject.CompareTag("DoorOpen2")) 
            {
                 Debug.Log(SceneManager.GetActiveScene().name);
+                speed = originalSpeed;
                 SceneManager.LoadScene("Scene3");
                 transform.position = new Vector3(8.95f, 11.0f, -10f);
                 
@@ -83,6 +86,7 @@ public class PlayerController : MonoBehaviour
           else if (other.gameObject.CompareTag("MayorDoor")) 
            {
                 Debug.Log(SceneManager.GetActiveScene().name);
+                speed = originalSpeed;
                 SceneManager.LoadScene("Alchemy Lab");
                 transform.position = new Vector3(0.68f, 3.81469f, -10f);
                 
@@ -90,6 +94,7 @@ public class PlayerController : MonoBehaviour
           else if (other.gameObject.CompareTag("MayorDoorExit")) 
            {
                 Debug.Log(SceneManager.GetActiveScene().name);
+                speed = originalSpeed;
                 SceneManager.LoadScene("forestAndTown");
                 transform.position = new Vector3(-343f, 9.5f, 39.1f);
                 sceneOut = true;
