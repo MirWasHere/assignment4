@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
            {
                 Debug.Log(SceneManager.GetActiveScene().name);
                 SceneManager.LoadScene("forestAndTown");
-                transform.position = new Vector3(126.14f, 18.36f, -83.21f);
+                transform.position = new Vector3(-300f, 18.36f, 39.1f);
                 sceneOut = true;
                 
           }
