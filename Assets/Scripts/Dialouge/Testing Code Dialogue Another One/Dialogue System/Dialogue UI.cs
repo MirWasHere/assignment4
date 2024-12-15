@@ -50,6 +50,7 @@ public class DialogueUI : MonoBehaviour
         if(/*dialogueObject.SecondaryDialogues.Length > 0 &&*/ dialogueObject.readTimes >= 1)
         {
             if (dialogueObject.secondaryDialogue != null)
+            Debug.Log("Secondary Dialogue");
                 ShowDialogue(dialogueObject.secondaryDialogue);
             
             CloseDialogueBox();

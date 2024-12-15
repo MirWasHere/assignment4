@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
            {
                 Debug.Log(SceneManager.GetActiveScene().name);
                 SceneManager.LoadScene("forestAndTown");
-                transform.position = new Vector3(-300f, 9.5f, 39.1f);
+                transform.position = new Vector3(-343f, 9.5f, 39.1f);
                 sceneOut = true;
                 
           }
@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         if(won)
-        {   countText.text = "Count: " + count.ToString();
+        {   countText.text = "";
 
             // Setting new scene (until transition is added. maybe??)
             Debug.Log(SceneManager.GetActiveScene().name);

@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
-  m_Name: Cutting Down Tree
+  m_Name: Cut it Down
   m_EditorClassIdentifier: 
   sentenceTexts:
-  - sentence: This is a tree
+  - sentence: Airin should not be trusted with an axe, but, alas...
     charName: 
     charSprite: {fileID: 0}
-  - sentence: You chop down trees to get wood.
+  - sentence: Airin swings the axe with all his might!
     charName: 
     charSprite: {fileID: 0}
-  - sentence: Airin stares at the tree...
+  - sentence: 'Some spliters come off.
+
+      You obtained the Tree Organs!'
     charName: 
     charSprite: {fileID: 0}
-  responses:
-  - responseText: Chop it down
-    dialogueObject: {fileID: 11400000, guid: 8c7c5b74dacbbe0419f14da2a60f0544, type: 2}
+  responses: []
   secondaryDialogue: {fileID: 0}
   finalDialogueInTown: 0
   finalDialogueCompletely: 0
   givable: 0
-  giving: 0
-  giveNum: 0
+  giving: 1
+  giveNum: 1
   item: {fileID: 11400000, guid: 1f15a6ea15a507a48926819857e13f43, type: 2}
   readTimes: 0
