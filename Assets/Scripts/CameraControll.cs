@@ -15,14 +15,16 @@ public class CameraController : MonoBehaviour
     {
         // Getting the player's tag
         player = GameObject.FindGameObjectWithTag("Player");
-        offset = transform.position - player.transform.position;
+        
         if(PlayerController.sceneOut)
         {
             Debug.Log(PlayerController.sceneOut);
-            transform.position = new Vector3 (-356f, 4.71f, 32.92f);
-            PlayerController.sceneOut = false;
+            transform.position = new Vector3 (-290f, 14.28f, 39f);
+           // PlayerController.sceneOut = false;
             Debug.Log(PlayerController.sceneOut);
+            // offset = transform.position - player.transform.position;
         }
+        offset = transform.position - player.transform.position;
     }
 
     // Update is called once per frame
