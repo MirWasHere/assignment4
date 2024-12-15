@@ -19,13 +19,11 @@ public class DialogueUI : MonoBehaviour
     private ResponseHandler responseHandler;
     
     private TypeWritterEffect typeWritterEffect;
-    private bool secondary;
 
     //private DialogueInteractable dialogueInteractable;
 
     private void Start()
     {
-        secondary = false;
         typeWritterEffect = GetComponent<TypeWritterEffect>();
        // dialogueInteractable = GetComponent<DialogueInteractable>();
         responseHandler = GetComponent<ResponseHandler>();
@@ -41,7 +39,6 @@ public class DialogueUI : MonoBehaviour
             dialogueBox.SetActive(true);
             StartCoroutine(StepThroughDialogue(dialogueObject.secondaryDialogue));
         }
-
         else 
         {
             currDialogue = dialogueObject;
@@ -62,23 +59,11 @@ public class DialogueUI : MonoBehaviour
             dialogueObject.readTimes = 1;
         for( int i = 0; i < dialogueObject.SentenceTexts.Length; i ++)
         {
-<<<<<<< Updated upstream
-            if (dialogueObject.secondaryDialogue != null)
-            Debug.Log("Secondary Dialogue");
-                ShowDialogue(dialogueObject.secondaryDialogue);
-            
-            CloseDialogueBox();
-        }
-        else
-        {
-            for( int i = 0; i < dialogueObject.SentenceTexts.Length; i ++)
-=======
             //string dialogue = dialogueObject.Dialogue[i];
             string dialogue = dialogueObject.SentenceTexts[i].Sentences;
             nameText.text = dialogueObject.SentenceTexts[i].CharName;
 
             if(dialogueObject.SentenceTexts[i].CharSprite == null)
->>>>>>> Stashed changes
             {
                 charSprite.color = new Color(0, 0, 0, 0);
             }
