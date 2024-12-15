@@ -68843,7 +68843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1486309469}
-  dialogueObject: {fileID: 11400000, guid: ffd2e68e86110c14390e700cc9dc4220, type: 2}
+  dialogueObject: {fileID: 11400000, guid: 9cbbfca655c247a4990ad0f32ea20723, type: 2}
   dialogueUI: {fileID: 0}
   objectTag: 
 --- !u!1001 &1360483664

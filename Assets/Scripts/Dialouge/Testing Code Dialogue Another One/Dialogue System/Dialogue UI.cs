@@ -87,8 +87,9 @@ public class DialogueUI : MonoBehaviour
         }
         else
         {
-            Debug.Log(currDialogue.giving);
-            if (currDialogue.giving) {
+            if (currDialogue != null)
+                Debug.Log(currDialogue.giving);
+            if (currDialogue != null && currDialogue.giving) {
 
                 InventoryController inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventoryController>();
                 Debug.Log(inventory.addItem(currDialogue.item, currDialogue.giveNum));
