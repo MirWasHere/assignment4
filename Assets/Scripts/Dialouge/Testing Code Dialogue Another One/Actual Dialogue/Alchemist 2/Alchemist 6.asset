@@ -19,28 +19,28 @@ MonoBehaviour:
   - sentence: "You got everything! To be quite honest I wasn\u2019t sure you were
       going to be able to\u2026but nonetheless, you did! "
     charName: Alchemist
-    charSprite: {fileID: 0}
+    charSprite: {fileID: -1297625263, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
   - sentence: Now all I have to do is cut up the wood and glue them into a ladder
       and with the extra wood, I could it make it an ever extending ladder!
     charName: Alchemist
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 173330307, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
   - sentence: "Then I\u2019ll liquidize the non-crystalline transparent solids and
       blow them into round bubbles. "
     charName: Alchemist
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 468929849, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
   - sentence: "Then I\u2019ll fill them with the lifeline string to create a light
       so you can see on your way up!"
     charName: Alchemist
-    charSprite: {fileID: 0}
-  responses:
-  - responseText: '...(holds water bag) '
-    dialogueObject: {fileID: 11400000, guid: aa386526d4a48c443ad2b9a9278050ca, type: 2}
-  - responseText: ' water.'
-    dialogueObject: {fileID: 11400000, guid: aa386526d4a48c443ad2b9a9278050ca, type: 2}
-  - responseText: What about the water- sorry essence of life. What are you going
-      to use that for?
-    dialogueObject: {fileID: 11400000, guid: aa386526d4a48c443ad2b9a9278050ca, type: 2}
+    charSprite: {fileID: -278431560, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
+  - sentence: Well, here ya go! As promised. Don't forget to visit us sometime!
+    charName: Alchemist
+    charSprite: {fileID: -365143817, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
+  responses: []
+  secondaryDialogue: {fileID: 0}
+  finalDialogueInTown: 1
+  finalDialogueCompletely: 0
   givable: 0
   giving: 0
   giveNum: 0
   item: {fileID: 0}
+  readTimes: 0

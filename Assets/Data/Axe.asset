@@ -24,6 +24,7 @@ MonoBehaviour:
   <actionSFX>k__BackingField: {fileID: 8300000, guid: 1e4d438f9d286304b918672a47cba77f,
     type: 3}
   dialogueObject: {fileID: 11400000, guid: 01d99a5e7a775864fbbeb51ea99c58cf, type: 2}
+  dialogueObject2: {fileID: 11400000, guid: 8c7c5b74dacbbe0419f14da2a60f0544, type: 2}
   dontGiveMe: {fileID: 11400000, guid: 08d9775922f27f44cba9a0a5d6a6543b, type: 2}
   characterName: frog
-  characterName2: no one
+  characterName2: Tree

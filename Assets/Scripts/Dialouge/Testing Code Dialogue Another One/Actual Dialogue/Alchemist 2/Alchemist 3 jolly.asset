@@ -15,14 +15,18 @@ MonoBehaviour:
   sentenceTexts:
   - sentence: 'Oh wow! That must have been hard to chop down. '
     charName: Alchemist
-    charSprite: {fileID: 0}
+    charSprite: {fileID: -1297625263, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
   - sentence: Hmmm, what about the non-crystalline transparent solids?
     charName: Alchemist
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 173330307, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
   responses:
   - responseText: No...
     dialogueObject: {fileID: 11400000, guid: 4b943da96ce0e884b9fd6c0172d8ed95, type: 2}
+  secondaryDialogue: {fileID: 0}
+  finalDialogueInTown: 0
+  finalDialogueCompletely: 0
   givable: 1
   giving: 0
   giveNum: 0
   item: {fileID: 0}
+  readTimes: 0

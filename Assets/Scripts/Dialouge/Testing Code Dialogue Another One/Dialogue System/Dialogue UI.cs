@@ -19,13 +19,11 @@ public class DialogueUI : MonoBehaviour
     private ResponseHandler responseHandler;
     
     private TypeWritterEffect typeWritterEffect;
-    private bool secondary;
 
     //private DialogueInteractable dialogueInteractable;
 
     private void Start()
     {
-        secondary = false;
         typeWritterEffect = GetComponent<TypeWritterEffect>();
        // dialogueInteractable = GetComponent<DialogueInteractable>();
         responseHandler = GetComponent<ResponseHandler>();
@@ -35,10 +33,20 @@ public class DialogueUI : MonoBehaviour
 
     public void ShowDialogue(DialogueObjecct dialogueObject)
     {
-        currDialogue = dialogueObject;
-        dialogueBox.SetActive(true);
-        //dialogueObject.readTimes += 1;
-        StartCoroutine(StepThroughDialogue(dialogueObject));
+        if (dialogueObject.secondaryDialogue != null && dialogueObject.readTimes >= 1) 
+        {
+            currDialogue = dialogueObject.secondaryDialogue;
+            dialogueBox.SetActive(true);
+            StartCoroutine(StepThroughDialogue(dialogueObject.secondaryDialogue));
+        }
+        else 
+        {
+            currDialogue = dialogueObject;
+            dialogueBox.SetActive(true);
+            //dialogueObject.readTimes += 1;
+            StartCoroutine(StepThroughDialogue(dialogueObject));
+        }
+
     }
 
     public void ClearResponses() {
@@ -47,41 +55,31 @@ public class DialogueUI : MonoBehaviour
 
     private  IEnumerator StepThroughDialogue(DialogueObjecct dialogueObject)
     {
-        if(/*dialogueObject.SecondaryDialogues.Length > 0 &&*/ dialogueObject.readTimes >= 1)
+        if (dialogueObject.secondaryDialogue != null)
+            dialogueObject.readTimes = 1;
+        for( int i = 0; i < dialogueObject.SentenceTexts.Length; i ++)
         {
-            if (dialogueObject.secondaryDialogue != null)
-                ShowDialogue(dialogueObject.secondaryDialogue);
-            
-            CloseDialogueBox();
-        }
-        else
-        {
-            for( int i = 0; i < dialogueObject.SentenceTexts.Length; i ++)
+            //string dialogue = dialogueObject.Dialogue[i];
+            string dialogue = dialogueObject.SentenceTexts[i].Sentences;
+            nameText.text = dialogueObject.SentenceTexts[i].CharName;
+
+            if(dialogueObject.SentenceTexts[i].CharSprite == null)
             {
-                //string dialogue = dialogueObject.Dialogue[i];
-                string dialogue = dialogueObject.SentenceTexts[i].Sentences;
-                nameText.text = dialogueObject.SentenceTexts[i].CharName;
-
-                if(dialogueObject.SentenceTexts[i].CharSprite == null)
-                {
-                    charSprite.color = new Color(0, 0, 0, 0);
-                }
-                else
-                {
-                    charSprite.sprite = dialogueObject.SentenceTexts[i].CharSprite;
-                    charSprite.color = Color.white;
-                }
-                
-                yield return typeWritterEffect.Run(dialogue, textLabel);
-
-                if(i == dialogueObject.SentenceTexts.Length - 1 && dialogueObject.HasResponses) break;
-
-
-                yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
-                
+                charSprite.color = new Color(0, 0, 0, 0);
             }
-            if (dialogueObject.secondaryDialogue != null)
-                dialogueObject.readTimes = 1;
+            else
+            {
+                charSprite.sprite = dialogueObject.SentenceTexts[i].CharSprite;
+                charSprite.color = Color.white;
+            }
+            
+            yield return typeWritterEffect.Run(dialogue, textLabel);
+
+            if(i == dialogueObject.SentenceTexts.Length - 1 && dialogueObject.HasResponses) break;
+
+
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+            
         }
         if(dialogueObject.HasResponses)
         {
@@ -89,8 +87,9 @@ public class DialogueUI : MonoBehaviour
         }
         else
         {
-            Debug.Log(currDialogue.giving);
-            if (currDialogue.giving) {
+            if (currDialogue != null)
+                Debug.Log(currDialogue.giving);
+            if (currDialogue != null && currDialogue.giving) {
 
                 InventoryController inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventoryController>();
                 Debug.Log(inventory.addItem(currDialogue.item, currDialogue.giveNum));

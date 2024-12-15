@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
-  m_Name: Alchemist 8
+  m_Name: cut it down 1
   m_EditorClassIdentifier: 
   sentenceTexts:
-  - sentence: "...someone\u2019s petty. (rolls eyes)"
-    charName: Alchemist
-    charSprite: {fileID: 0}
-  - sentence: Well, here ya go! As promised. Don't forget to visit us sometime!
-    charName: Alchemist
-    charSprite: {fileID: 0}
+  - sentence: This is a Tree. A very very conveniently placed Tree...
+    charName: Tree
+    charSprite: {fileID: 21300000, guid: 92b486f94ef1555469746211ed89b47d, type: 3}
   responses: []
-  givable: 0
+  secondaryDialogue: {fileID: 0}
+  finalDialogueInTown: 0
+  finalDialogueCompletely: 0
+  givable: 1
   giving: 0
   giveNum: 0
   item: {fileID: 0}
+  readTimes: 0

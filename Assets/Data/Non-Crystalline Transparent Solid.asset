@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6027e1aff0cab1408ef2c31bd7914d5, type: 3}
   m_Name: Non-Crystalline Transparent Solid
   m_EditorClassIdentifier: 
-  <IsStackable>k__BackingField: 0
+  <IsStackable>k__BackingField: 1
   <MaxStackSize>k__BackingField: 2
   <Name>k__BackingField: Non-Crystalline Transparent Solid
   <Description>k__BackingField: The jar is sticky, warm, and smells faintly of nostalgic

@@ -15,13 +15,18 @@ MonoBehaviour:
   sentenceTexts:
   - sentence: "Ah! You\u2019re back!! Well let\u2019s see what you\u2019ve got\u2026"
     charName: Alchemist
-    charSprite: {fileID: 0}
+    charSprite: {fileID: -365143817, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
   - sentence: Do you have the Essense of Life?
     charName: Alchemist
-    charSprite: {fileID: 0}
+    charSprite: {fileID: 114594192, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
   responses:
   - responseText: No...
     dialogueObject: {fileID: 11400000, guid: 4b943da96ce0e884b9fd6c0172d8ed95, type: 2}
+  secondaryDialogue: {fileID: 0}
+  finalDialogueInTown: 0
+  finalDialogueCompletely: 0
   givable: 1
   giving: 0
+  giveNum: 0
   item: {fileID: 0}
+  readTimes: 0
