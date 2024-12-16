@@ -55,13 +55,6 @@ public class PlayerController : MonoBehaviour
         // else{
         //     transform.localScale += new Vector3(0, 0, 0);
         // }
-
-        if(SceneManager.GetActiveScene().name == "Final")
-        {
-            transform.position = new Vector3(7.65f, 7.9f, 12f);
-            transform.Rotate(90, 0, 0);
-
-        }
     }
 
 
