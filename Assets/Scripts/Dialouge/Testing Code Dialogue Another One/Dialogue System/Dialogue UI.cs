@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 using Inventory;
 using Inventory.Model;
+using UnityEngine.SceneManagement;
 
 public class DialogueUI : MonoBehaviour
 {
@@ -95,6 +96,17 @@ public class DialogueUI : MonoBehaviour
                 Debug.Log(inventory.addItem(currDialogue.item, currDialogue.giveNum));
 
             }
+            if (dialogueObject.finalDialogueInTown) 
+            {
+                SceneManager.LoadScene("Final");
+                GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(7.65f, 7.9f, 12f);
+                GameObject.FindGameObjectWithTag("Player").transform.Rotate(0, 90, 0);
+            }
+            if (dialogueObject.finalDialogueCompletely) 
+            {
+                Debug.Log(GameObject.FindGameObjectWithTag("Final"));
+                GameObject.FindGameObjectWithTag("Final").transform.GetChild(0).gameObject.SetActive(true);
+            }
             CloseDialogueBox();
             
             DialogueInteractable.inConversation = false;
@@ -109,7 +121,6 @@ public class DialogueUI : MonoBehaviour
         currDialogue = null;
         dialogueBox.SetActive(false);
         textLabel.text = "";
-        
 
     }
 

@@ -32,7 +32,8 @@ MonoBehaviour:
       so you can see on your way up!"
     charName: Alchemist
     charSprite: {fileID: -278431560, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
-  - sentence: Well, here ya go! As promised. Don't forget to visit us sometime!
+  - sentence: Well, here ya go! As promised, an ever extending ladder to get you
+      out of the hold in the sky. Don't forget to visit us sometime!
     charName: Alchemist
     charSprite: {fileID: -365143817, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
   responses: []

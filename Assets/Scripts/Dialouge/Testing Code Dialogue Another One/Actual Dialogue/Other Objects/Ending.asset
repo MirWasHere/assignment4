@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ddab6343136b724a91826af93223807, type: 3}
+  m_Name: Ending
+  m_EditorClassIdentifier: 
+  sentenceTexts:
+  - sentence: 'FINALLY! You''ve been asleep for 2 days! '
+    charName: Charles
+    charSprite: {fileID: 0}
+  - sentence: 'Here you are, sleeping on the job after picking 3 strawberries... '
+    charName: Charles
+    charSprite: {fileID: 0}
+  - sentence: Wait... do you even have any left on you???
+    charName: Charles
+    charSprite: {fileID: 0}
+  - sentence: ...
+    charName: Airin
+    charSprite: {fileID: 1607587547, guid: 47651bf3e3e10c14989124001dec53a5, type: 3}
+  - sentence: NO???!?! WHERE DID THEY GO?
+    charName: Charles
+    charSprite: {fileID: 0}
+  - sentence: Oh nevermind. I'll let it go since we're neighbors.
+    charName: Charles
+    charSprite: {fileID: 0}
+  - sentence: Anyways, sigh UGH I really wish I could get those birds off my fence,
+      if only I had a very convenient ever extending ladder...
+    charName: Charles
+    charSprite: {fileID: 0}
+  responses: []
+  secondaryDialogue: {fileID: 0}
+  finalDialogueInTown: 0
+  finalDialogueCompletely: 1
+  givable: 0
+  giving: 0
+  giveNum: 0
+  item: {fileID: 0}
+  readTimes: 0
