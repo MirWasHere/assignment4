@@ -31,8 +31,9 @@ MonoBehaviour:
   - sentence: Well then I guess the only option...
     charName: Alchemist
     charSprite: {fileID: 468929849, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
-  - sentence: OK! I'll need you to collect some materials for me so I can get you
-      hoeme
+  - sentence: 'OK! I''ll need you to collect some materials for me so I can get you
+      home: the Tree Organs, the Essense of Life, Non-Crystallized Transparent Solid,
+      Lifelife String, Frog slime'
     charName: Alchemist
     charSprite: {fileID: 173330307, guid: 6fde0ed8fa2dbc44faa75cd81fc81f81, type: 3}
   - sentence: .                   .                     .
@@ -51,4 +52,11 @@ MonoBehaviour:
     dialogueObject: {fileID: 11400000, guid: 8f93065b87675ac4994e490c89de5544, type: 2}
   - responseText: I'm broke.
     dialogueObject: {fileID: 11400000, guid: 1a54096f583b9bc408a8ad56471f893a, type: 2}
+  secondaryDialogue: {fileID: 0}
+  finalDialogueInTown: 0
+  finalDialogueCompletely: 0
   givable: 0
+  giving: 0
+  giveNum: 0
+  item: {fileID: 0}
+  readTimes: 0

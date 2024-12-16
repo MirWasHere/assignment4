@@ -13,17 +13,10 @@ MonoBehaviour:
   m_Name: Cut it Down 2
   m_EditorClassIdentifier: 
   sentenceTexts:
-  - sentence: Airin should not be trusted with an axe, but, alas...
+  - sentence: Airin should not be trusted with an axe, but, alas... Airin swings
+      the axe with all his might! Some spliters come off. You obtained the Tree Organs!
     charName: Tree
     charSprite: {fileID: 21300000, guid: 92b486f94ef1555469746211ed89b47d, type: 3}
-  - sentence: Airin swings the axe with all his might!
-    charName: Tree
-    charSprite: {fileID: 21300000, guid: 77fa03b78ec0e274a84f3579ddd4fc0b, type: 3}
-  - sentence: 'Some spliters come off.
-
-      You obtained the Tree Organs!'
-    charName: Dead Tree
-    charSprite: {fileID: 21300000, guid: 72f4d3edb8440014e9575f029842e9cc, type: 3}
   responses: []
   secondaryDialogue: {fileID: 0}
   finalDialogueInTown: 0
