@@ -22,7 +22,7 @@ MonoBehaviour:
     type: 3}
   <actionSFX>k__BackingField: {fileID: 8300000, guid: 1e4d438f9d286304b918672a47cba77f,
     type: 3}
-  dialogueObject: {fileID: 11400000, guid: 6d38d6da4ecf2394fb8d64402822ecd3, type: 2}
+  dialogueObject: {fileID: 11400000, guid: 4222cf7659ede14488d8639198d1934e, type: 2}
   dialogueObject2: {fileID: 0}
   dontGiveMe: {fileID: 11400000, guid: 08d9775922f27f44cba9a0a5d6a6543b, type: 2}
   characterName: Alchemist

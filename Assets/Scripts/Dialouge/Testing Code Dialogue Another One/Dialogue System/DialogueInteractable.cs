@@ -80,7 +80,7 @@ public class DialogueInteractable : MonoBehaviour
         // don't let the character give anything + make the character say:
         // "DONT GIVE ME ANYTHING"
         else if(dialogueUI.currDialogue.givable == false || (!name.Equals(dialogueUI.currDialogue.sentenceTexts[0].CharName) 
-            && !name2.Equals(dialogueUI.currDialogue.sentenceTexts[0].CharName) && !dialogueUI.currDialogue.sentenceTexts[0].CharName.Equals("Tree")))
+            && !name2.Equals(dialogueUI.currDialogue.sentenceTexts[0].CharName)))
         {
             dialogueUI.ClearResponses();
 
@@ -95,7 +95,7 @@ public class DialogueInteractable : MonoBehaviour
         if (name.Equals(dialogueUI.currDialogue.sentenceTexts[0].CharName)) {
             dialogueObject = dialogue;
         }
-        else {
+        else if (name2.Equals(dialogueUI.currDialogue.sentenceTexts[0].CharName)){
             dialogueObject = dialogue2;
         }
 

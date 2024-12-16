@@ -15,7 +15,7 @@ MonoBehaviour:
   <IsStackable>k__BackingField: 0
   <MaxStackSize>k__BackingField: 1
   <Name>k__BackingField: Tree Organs
-  <Description>k__BackingField: The organs of a tree.. wait does this emplty that
+  <Description>k__BackingField: The organs of a tree.. wait does this imply that
     the bark is also part of the organs... IS THE ENTIRE TREE THE ORGANS OF THE TREE?!
   <ItemImage>k__BackingField: {fileID: 21300000, guid: 72f4d3edb8440014e9575f029842e9cc,
     type: 3}

@@ -108,9 +108,9 @@ namespace Inventory
                     inventoryData.RemoveItem(itemIndex, 1);
                     if (audioSource != null)
                         audioSource.PlayOneShot(itemAction.actionSFX);
-                    
-                    inventoryUI.Hide();
                 }
+                
+                inventoryUI.Hide();
                     
                 if (inventoryData.GetItemAt(itemIndex).IsEmpty)
                     inventoryUI.ResetSelection();
